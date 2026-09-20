@@ -1,0 +1,9 @@
+project_name: co_elimination_project
+data_dir: ./data
+raw_data_dir: ./raw_data
+genome_dir: ./genomes
+alignment_dir: ./alignments
+ortholog_dir: ./orthologs
+analysis_dir: ./analysis
+results_dir: ./results
+logs_dir: ./logs

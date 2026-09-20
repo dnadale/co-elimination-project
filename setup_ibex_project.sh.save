@@ -1,0 +1,30 @@
+setup_ibex_project.sh
+#!/bin/bash
+set -euo pipefail
+
+PROJECT_NAME="co_elimination_project"
+PROJECT_DIR="${HOME}/${PROJECT_NAME}"
+
+mkdir -p "${PROJECT_DIR}"/{data,raw_data,genomes,alignments,orthologs,analysis,results,logs,notebooks,src}
+
+echo "Creating project directory: ${PROJECT_DIR}"
+cd "${PROJECT_DIR}"
+
+module purge || true
+module load python || true
+module load git || true
+module load gcc || true
+
+if command -v conda >/dev/null 2>&1; then
+    echo "Conda found. Creating environment: ${PROJECT_NAME}-env"
+    conda create -y -n "${PROJECT_NAME}-env" python=3.11
+else
+    echo "Conda not found; using system Python"
+fi
+
+python -m pip install --upgrade pip
+python -m pip install numpy pandas scipy scikit-learn matplotlib seaborn jupyter notebook ipykernel biopython pyyaml requests tqdm pyfaidx ete3 networkx
+
+echo "Project setup complete."
+echo "Project directory: ${PROJECT_DIR}"
+
