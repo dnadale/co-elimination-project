@@ -34,7 +34,12 @@ The initial focus is the Zoonomia comparative genomics resource, which provides 
    - Examine pathway annotations, protein interactions, tissue-specific expression, and conservation or constraint patterns.
    - Use phyloP scores as supporting evidence for evolutionary constraint or accelerated evolution, not as the primary definition of gene loss.
 
-6. **Reverse functional validation**
+6. **Optional regulatory extension**
+   - If a candidate phenotype and suitable training data are available, use TACIT to predict conserved or lineage-specific enhancer activity.
+   - Treat TACIT as a phenotype-linked follow-up method rather than a replacement for the phenotype-agnostic gene-loss screen.
+   - Use phylogenetic regression and permutation testing to reduce false associations.
+
+7. **Reverse functional validation**
    - Compare retained human orthologs with clinical genetics databases.
    - Where appropriate, evaluate candidate genes using model organisms or existing experimental evidence.
 
@@ -43,6 +48,8 @@ The initial focus is the Zoonomia comparative genomics resource, which provides 
 The left-right asymmetry module involving MMP21, DAND5, PKD1L1, CIROP, and CIROZ illustrates the type of discovery this framework is intended to support. A shared, unusual evolutionary footprint can group known and previously uncharacterized genes before the relevant phenotype is fully understood. Subsequent clinical genetics and experimental work can then connect the computationally discovered module to left-right patterning and heterotaxy.
 
 This example is motivating context rather than a result of the current project.
+
+It can also serve as a positive-control case for the pilot: first test whether a known left-right patterning module can be recovered from the available orthology and gene-status data, then search for previously uncharacterized modules.
 
 ## Role of phyloP
 
@@ -57,6 +64,18 @@ phyloP scores are relevant as an auxiliary feature. They can help quantify conse
 - Functional annotations and conservation summaries for candidate modules.
 - Reproducible notebooks, scripts, parameters, logs, and final figures.
 
+## Confirmed public data resources
+
+The official Zoonomia and TOGA resources have now been checked. Zoonomia provides the 240-species Cactus alignment, a mammalian phylogeny, conservation scores, genome assemblies, and associated comparative data. The TOGA archive provides reusable annotations and gene-status outputs for reference/query assembly comparisons, including `loss_summ_data.tsv.gz`, `orthologsClassification.tsv.gz`, `geneInactivatingMutations.tsv.gz`, BED12/GTF annotations, and codon or protein alignments.
+
+The project will use these precomputed resources where possible rather than rebuilding the entire annotation pipeline. The exact set of species and assembly directories still needs to be selected, and the pairwise nature of TOGA calls must be accounted for in ancestral-state and co-elimination analyses.
+
 ## Important feasibility note
 
-The full Zoonomia-scale analysis will require substantial storage, compute time, software setup, and careful validation. The project should begin with a small pilot subset of mammals and a limited set of genes or annotations before scaling to the complete resource.
+The full Zoonomia-scale analysis will require substantial storage, compute time, software setup, and careful validation. The project should begin by downloading and validating a manageable subset of the existing TOGA outputs before scaling to the complete resource.
+
+For a three-to-four-month master's project, the core workflow should remain:
+
+`Zoonomia -> orthology/gene status -> retention/loss matrix -> phylogenetic co-elimination -> constraint and functional interpretation`
+
+Expression, translatome, alternative-splicing, TACIT, ageing, and experimental-validation analyses should be treated as supporting context or future work unless the lab already has compatible processed data and pipelines.

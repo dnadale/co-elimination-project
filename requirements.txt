@@ -1,0 +1,16 @@
+numpy
+pandas
+scipy
+scikit-learn
+matplotlib
+seaborn
+jupyter
+notebook
+ipykernel
+biopython
+pyyaml
+requests
+tqdm
+pyfaidx
+ete3
+networkx

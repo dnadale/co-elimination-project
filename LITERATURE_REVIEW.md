@@ -2,6 +2,10 @@
 
 This reading list supports the master’s project on phenotype-agnostic coordinated gene co-elimination across placental mammals.
 
+The broader summer reading provides the evolutionary rationale for the project: gene duplication creates redundancy, pleiotropy and developmental importance impose constraint, and relaxed selection or regulatory rewiring can produce lineage-specific innovation. These topics should inform interpretation without expanding the minimum computational deliverable beyond a manageable pilot.
+
+The official Zoonomia and TOGA metadata have now been inventoried. This confirms that the literature review can be connected to reusable public annotations and gene-status outputs rather than assuming that all computational preprocessing must be recreated.
+
 ## Priority 1: Core project concept
 
 ### Szenker-Ravi et al. (2022)
@@ -87,6 +91,38 @@ Questions to answer:
 - Can OrthoFinder handle the selected pilot species?
 - What input sequence and annotation quality is required?
 - Is it necessary if TOGA already supplies orthology relationships?
+
+## Supporting summer reading
+
+The following topics are relevant for the literature review and discussion, but are not all required pipeline components:
+
+- Cañestro et al. (2013): gene duplication, paralogs, orthologs, synteny, and the evolutionary fates of duplicate genes.
+- Wang et al. (2020): transcriptome/translatome differences and evolutionary buffering.
+- Mazin et al. (2021): alternative splicing, exon-level constraint, and organ development.
+- Cooper (2024): limitations of single-gene explanations for complex evolutionary traits.
+- Cardoso-Moreira and colleagues: developmental expression trajectories, pleiotropy, tissue-specific constraint, and evolutionary timing.
+- Fukushima and Pollock (2020): organ-specific expression evolution and phylogenetic expression models.
+- Reviews and case studies on convergent evolution, lineage-specific innovation, ageing, and antagonistic pleiotropy: useful conceptual context, but outside the minimum co-elimination pilot.
+
+These readings support a network-level interpretation of co-elimination and caution against assuming that similar phenotypes always use identical genetic mechanisms.
+
+## TACIT and regulatory follow-up
+
+TACIT is relevant as a possible downstream method for predicting enhancer activity and associating regulatory evolution with an explicitly labeled phenotype. It should not replace the phenotype-agnostic retention/loss screen because TACIT requires phenotype-associated training or comparison data.
+
+A sensible order is:
+
+1. Discover candidate modules from gene retention, disruption, and loss profiles.
+2. Overlay phyloP/phastCons and other constraint evidence.
+3. Use TACIT for enhancer-focused follow-up if a suitable phenotype and training dataset are available.
+
+## Positive-control strategy
+
+The CIROP/DAND5/MMP21/PKD1L1/C1orf127 or CIROZ left-right patterning material can motivate a positive-control analysis. The pipeline should first test whether a known module or a subset of its evolutionary profile is recoverable. Any exact gene functions, clade-specific loss claims, disease percentages, and recent-paper claims must be verified against the primary sources before being reported as results.
+
+## Verification requirement
+
+The summer study guide is a useful synthesis but is not itself a primary source. Before citing exact numbers, software versions, species counts, gene functions, or recent publications, check the original papers, supplementary files, and official code or data repositories.
 
 ## Priority 4: Evolutionary conservation and statistics
 

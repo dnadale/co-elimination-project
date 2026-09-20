@@ -45,6 +45,12 @@ Which genes or pathways show statistically meaningful patterns of joint retentio
 
 The project will be considered successful when the analysis produces a reproducible, documented set of statistically supported co-elimination candidates, along with enough information to inspect the underlying genomes, ortholog assignments, assumptions, and limitations.
 
+## Scope boundary for the master's project
+
+The minimum thesis deliverable is a reproducible pilot consisting of Zoonomia data, orthology and gene-status evidence, a retention/loss matrix, phylogenetically informed co-elimination scoring, and constraint or functional interpretation. Expression, alternative splicing, TACIT enhancer prediction, and experimental validation are valuable extensions but should not be required for completion unless compatible data and pipelines are already available.
+
+The known CIROP/DAND5 left-right patterning module may be used as a positive-control case. Recovering a known evolutionary profile before searching for new modules will provide an important pipeline validation step.
+
 ## Current status
 
-The project environment and directory structure are set up. The research focus is now the phenotype-agnostic analysis of Zoonomia placental mammal genomes, beginning with a small pilot before full-scale data collection. Data acquisition, TOGA/CESAR evaluation, ortholog inference, co-elimination testing, and biological interpretation are next.
+The project environment and directory structure are set up. Official Zoonomia and TOGA metadata have been successfully accessed and recorded locally. The TOGA archive confirms that reusable orthology, gene-status, mutation, annotation, and alignment outputs exist. No large genome or alignment files have been downloaded yet. The next step is to select a manageable set of mammalian assemblies and retrieve the relevant precomputed TOGA files before constructing the retention/loss matrix.
