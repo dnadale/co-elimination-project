@@ -35,7 +35,7 @@ Questions to answer:
 
 ## Priority 2: Zoonomia and comparative genomics
 
-### Zoonomia Consortium (2020)
+### Zoonomia Consortium (2023)
 **A comparative genomics multitool for scientific discovery and conservation**
 
 Journal: Nature
@@ -48,12 +48,8 @@ Questions to answer:
 - Which processed files can be used instead of regenerated?
 - What storage and compute requirements should be expected on IBEX?
 
-### Armstrong et al. (2020)
-**The role of long-term conservation in the evolution of mammalian genes**
-
-Journal: Nature
-
-Why it matters: Provides useful examples of how broad mammalian comparative data can reveal conserved and rapidly evolving genomic regions.
+### Verification note on additional mammalian-evolution citations
+The earlier "Armstrong et al. (2020)" entry is not retained because the exact paper and title were not verified. Any additional claims about mammalian gene evolution or conservation should be cited only after checking the primary paper, DOI, and journal entry.
 
 ## Priority 3: Gene-loss and orthology tools
 
@@ -95,15 +91,12 @@ Questions to answer:
 
 ## Supporting summer reading
 
-The following topics are relevant for the literature review and discussion, but are not all required pipeline components:
+The following topics are relevant for the literature review and discussion, but they should only be included with full formal citations when the exact paper is checked:
 
 - Cañestro et al. (2013): gene duplication, paralogs, orthologs, synteny, and the evolutionary fates of duplicate genes.
 - Wang et al. (2020): transcriptome/translatome differences and evolutionary buffering.
 - Mazin et al. (2021): alternative splicing, exon-level constraint, and organ development.
-- Cooper (2024): limitations of single-gene explanations for complex evolutionary traits.
-- Cardoso-Moreira and colleagues: developmental expression trajectories, pleiotropy, tissue-specific constraint, and evolutionary timing.
-- Fukushima and Pollock (2020): organ-specific expression evolution and phylogenetic expression models.
-- Reviews and case studies on convergent evolution, lineage-specific innovation, ageing, and antagonistic pleiotropy: useful conceptual context, but outside the core co-elimination analysis.
+- Any author-year-only mention of a paper without a title, journal, issue, or DOI should be treated as unverified and removed from a formal bibliography.
 
 These readings support a network-level interpretation of co-elimination and caution against assuming that similar phenotypes always use identical genetic mechanisms.
 
@@ -189,12 +182,12 @@ For every paper, record:
 ## Recommended reading order
 
 1. Szenker-Ravi et al. (2022)
-2. Zoonomia Consortium (2020)
+2. Zoonomia Consortium (2023)
 3. Kirilenko et al. (2023), TOGA
 4. Pollard et al. (2010), phyloP
 5. Anthropic (2026), ART genome-mining case study and technical report
-6. Szenker-Ravi et al. (2025)
-7. CESAR 2.0 paper
+6. Szenker-Ravi et al. (2025) — verify exact title and journal entry before formal citation
+7. CESAR 2.0 paper — verify exact publication details before formal reference
 8. Emms and Kelly (2019), OrthoFinder
 9. Pagel (1994)
 10. Hubisz et al. (2011)

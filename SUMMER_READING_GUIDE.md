@@ -48,7 +48,7 @@ Project relevance:
 
 ### Complexity and network-level explanations
 
-Cooper (2024), *The case against simplistic genetic explanations of evolution*, cautions against treating complex traits as the result of a single gene and emphasizes interconnected, small-effect, and developmental networks.
+If used in a formal bibliography, Cooper (2024) must be cited with the exact title, journal or book, and publication details. As written here, it is not a fully verified formal citation and should be treated as a working note rather than a final reference.
 
 Project relevance:
 
@@ -58,7 +58,7 @@ Project relevance:
 
 ### Organ evolution, developmental constraint, and expression divergence
 
-Cardoso-Moreira and colleagues, including the 2019 mammalian organ-development expression study and the later organ-evolution synthesis, provide context for pleiotropy, developmental timing, tissue-specific constraint, and the contrast between highly constrained organs and more permissive evolutionary settings.
+The Cardoso-Moreira et al. entries should be formalized only after checking the exact paper title, journal, issue, and DOI. This section is retained only as conceptual background and is not a final formal reference list.
 
 Project relevance:
 
@@ -68,7 +68,7 @@ Project relevance:
 
 ### Preadaptive expression pathways
 
-Fukushima and Pollock (2020), *Amalgamated cross-species transcriptomes reveal organ-specific propensity in gene expression evolution*, examines directional expression shifts, organ-to-organ expression patterns, duplication, and phylogenetic models such as Ornstein-Uhlenbeck processes.
+The Fukushima and Pollock reference should not be included as a formal citation without the exact article title, journal, and DOI. It is retained here only as a research direction, not as a verified bibliography item.
 
 Project relevance:
 
@@ -86,6 +86,7 @@ Project relevance:
 - phyloP and phastCons can provide supporting constraint features.
 - Constraint scores should help interpret candidate genes or regulatory regions, not define gene loss by themselves.
 - Exact species counts, assemblies, score definitions, and percentages must be checked against the original publication and data release.
+- For formal citation, use the 2023 Zoonomia paper rather than the earlier 2020 shorthand.
 
 Primary resources to consult while writing:
 
