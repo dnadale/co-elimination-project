@@ -24,7 +24,7 @@ Questions to answer:
 ### Szenker-Ravi et al. (2025)
 **CIROZ is dispensable in ancestral vertebrates but essential for left-right patterning in humans**
 
-Journal: Research Gate
+Journal: AJHG
 
 Why it matters: This paper shows how a computationally discovered candidate can be followed up with clinical and experimental validation.
 
