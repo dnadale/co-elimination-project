@@ -1,5 +1,5 @@
 {
-  "created_at_utc": "2026-10-08T09:45:35.161493+00:00",
+  "created_at_utc": "2026-10-10T17:54:35.876743+00:00",
   "command": "src/agentic_candidate_triage.py --matrix analysis/gene_status_matrix.tsv --output-dir results/agentic_triage --loss-values L --retained-values I --ignored-values PI,UL,M,PM,PG --min-losses 2 --min-shared-losses 2 --min-comparable-units 20 --top-n 100",
   "input_matrix": "/home/millert/co_elimination_project/analysis/gene_status_matrix.tsv",
   "gene_count": 19464,

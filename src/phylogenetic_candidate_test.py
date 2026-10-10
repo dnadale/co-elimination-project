@@ -48,9 +48,14 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--matrix", type=Path, default=DEFAULT_MATRIX)
     parser.add_argument("--candidates", type=Path, default=DEFAULT_CANDIDATES)
     parser.add_argument("--output-dir", type=Path, default=DEFAULT_OUTPUT)
-    parser.add_argument("--top-n", type=int, default=25)
-    parser.add_argument("--starts", type=int, default=2)
-    parser.add_argument("--maxiter", type=int, default=300)
+    parser.add_argument(
+        "--top-n",
+        type=int,
+        default=10,
+        help="Default is intentionally small; full 100-candidate runs are slow and should be explicit.",
+    )
+    parser.add_argument("--starts", type=int, default=1)
+    parser.add_argument("--maxiter", type=int, default=50)
     return parser.parse_args()
 
 
