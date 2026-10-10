@@ -44,7 +44,7 @@ Project relevance:
 
 - Helps interpret exon-level disruption detected by CESAR or related tools.
 - Suggests that loss of an exon or splice site should be evaluated in transcript and developmental context.
-- Provides a possible extension after the coding gene-loss pilot.
+- Provides a possible extension after the core coding gene-loss screen.
 
 ### Complexity and network-level explanations
 
@@ -64,7 +64,7 @@ Project relevance:
 
 - Useful for downstream prioritization of candidate modules by tissue and developmental role.
 - Supports interpreting expression divergence as complementary evidence rather than direct evidence of gene elimination.
-- The 2019 multi-organ, multi-species dataset may be useful for validation if accessible and compatible with the pilot.
+- The 2019 multi-organ, multi-species dataset may be useful for validation if accessible and compatible with the full analysis.
 
 ### Preadaptive expression pathways
 
@@ -87,6 +87,22 @@ Project relevance:
 - Constraint scores should help interpret candidate genes or regulatory regions, not define gene loss by themselves.
 - Exact species counts, assemblies, score definitions, and percentages must be checked against the original publication and data release.
 
+Primary resources to consult while writing:
+
+- [Zoonomia data portal](https://zoonomiaproject.org/the-data/) for assembly, alignment, conservation-score, phylogeny, and annotation access.
+- [TOGA archive](https://genome.senckenberg.de/download/TOGA/) for per-assembly outputs and archive documentation. Its gene-status classifications are reference-versus-query comparisons, so missingness and reference-specific genes must not be interpreted as confirmed lineage losses without phylogenetic checks.
+- Kirilenko et al. (2023), *Integrating gene annotation with orthology inference at scale*, Science 380(6643), eabn3107, [doi:10.1126/science.abn3107](https://doi.org/10.1126/science.abn3107), for TOGA methods and evaluation.
+
+### AI-assisted genome mining: ART case study
+
+Anthropic's September 2026 announcement, ["Claude discovers a novel enzyme system with CRISPR-like repeats"](https://www.anthropic.com/news/claude-discovers-novel-enzyme-system), and its linked [technical report](https://www-cdn.anthropic.com/22573675ada52a8ca8a97a1a4b4326b2f208a071.pdf) describe an AI-assisted search that identified candidate array-associated reverse transcriptases (ARTs). ART is a newly reported biological system, not an algorithm or released software package; its function is still being investigated.
+
+Project relevance:
+
+- Offers a methodological example of broad sequence screening, candidate prioritization, evidence summaries, expert review, and experimental follow-up.
+- Supports using AI to help triage ranked co-elimination candidates and organize evidence, after the matrix and statistical tests are generated reproducibly.
+- Does not establish that AI review improves accuracy by itself. Candidate status must come from the underlying data and validated analyses; AI suggestions need independent checking and an audit trail.
+
 ### TACIT and phenotype-linked enhancer inference
 
 TACIT (Transcriptional Activity Conservation and Inference Toolkit) uses sequence-based prediction of open-chromatin or enhancer activity across species and phylogenetically informed association with phenotypes.
@@ -107,7 +123,7 @@ The CIROP, DAND5, MMP21, PKD1L1, and C1orf127/CIROZ material provides a motivati
 Project relevance:
 
 - The module can serve as a positive-control case if the relevant ortholog and gene-status data are available.
-- A pilot can test whether known shared evolutionary profiles are recoverable before searching for novel modules.
+- A positive-control test can assess whether known shared evolutionary profiles are recoverable before searching for novel modules.
 - Claims about exact gene functions, clade-specific losses, disease percentages, and recent papers must be verified against primary sources before being used as conclusions.
 
 ### Convergent evolution and lineage-specific innovation
@@ -119,7 +135,7 @@ Project relevance:
 - Prevents assuming that phenotypic similarity implies identical genetic mechanisms.
 - Supports searching for repeated module-level patterns while allowing lineage-specific rewiring.
 - Provides conceptual background for classifying retained, disrupted, rewired, and lineage-specific genes.
-- These topics are contextual rather than required computational components of the initial co-elimination pilot.
+- These topics are contextual rather than required computational components of the core co-elimination analysis.
 
 ### Ageing, pleiotropy, and evolutionary trade-offs
 

@@ -1,0 +1,48 @@
+{
+  "created_at_utc": "2026-10-08T09:45:35.161493+00:00",
+  "command": "src/agentic_candidate_triage.py --matrix analysis/gene_status_matrix.tsv --output-dir results/agentic_triage --loss-values L --retained-values I --ignored-values PI,UL,M,PM,PG --min-losses 2 --min-shared-losses 2 --min-comparable-units 20 --top-n 100",
+  "input_matrix": "/home/millert/co_elimination_project/analysis/gene_status_matrix.tsv",
+  "gene_count": 19464,
+  "analysis_units": 162,
+  "loss_values": [
+    "L"
+  ],
+  "retained_values": [
+    "I"
+  ],
+  "ignored_values": [
+    "M",
+    "PG",
+    "PI",
+    "PM",
+    "UL"
+  ],
+  "min_losses": 2,
+  "min_shared_losses": 2,
+  "min_comparable_units": 20,
+  "top_n": 100,
+  "eligible_genes_for_screen": 7204,
+  "pairs_scored": 25945206,
+  "pairs_meeting_shared_loss_threshold": 7389576,
+  "reported_top_candidates": 100,
+  "input_status_counts": {
+    "I": 2356259,
+    "L": 142729,
+    "M": 92798,
+    "PG": 35910,
+    "PI": 348556,
+    "PM": 33802,
+    "UL": 143114
+  },
+  "outputs": [
+    "/home/millert/co_elimination_project/results/agentic_triage/ranked_co_loss_candidates.tsv",
+    "/home/millert/co_elimination_project/results/agentic_triage/review_prompts.jsonl"
+  ],
+  "scientific_status": "raw descriptive shared-loss screen; not phylogenetically corrected or a significance test",
+  "quality_control": {
+    "duplicate_gene_ids_checked": true,
+    "unknown_status_values_rejected": true,
+    "non_binary_TOga_states_excluded_from_each_pair_denominator": true,
+    "bounded_top_n_storage": true
+  }
+}

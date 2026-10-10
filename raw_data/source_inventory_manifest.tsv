@@ -1,5 +1,5 @@
 source_name	url	status	bytes	local_file	sha256	error	checked_at_utc
-zoonomia_data_page	https://zoonomiaproject.org/the-data/	200	148700	raw_data/source_inventory/zoonomia_data_page.html	9554bc628cce3bc4ed80055266212cdd87dec7e990934298efb4381ada18e9c4		2026-09-20T14:25:42.465113+00:00
-zoonomia_alignment_page	https://cglgenomics.ucsc.edu/data/cactus/	200	226745	raw_data/source_inventory/zoonomia_alignment_page.html	9ecb2c2be218f1cb0325a9dff6e64d8b8e05fa59d165444413092d14a9b18e73		2026-09-20T14:25:42.465113+00:00
-toga_download_index	https://genome.senckenberg.de/download/TOGA/	200	4205	raw_data/source_inventory/toga_download_index.html	7f3b2cb65ec21ed6fe16bdc6d49ebed3825b8edd61dbc98dd85c1fa947a5b278		2026-09-20T14:25:42.465113+00:00
-toga_repository	https://github.com/hillerlab/TOGA2	200	336410	raw_data/source_inventory/toga_repository.html	6ceac3842fc20e8ece1f1dbbf6d585ff003e691e507560ff487fc0454ba98d21		2026-09-20T14:25:42.465113+00:00
+zoonomia_data_page	https://zoonomiaproject.org/the-data/	200	148700	raw_data/source_inventory/zoonomia_data_page.html	3a4210809235121284d875ad56fa99eeff0e508e767aaa4e3aca93d299de339b		2026-10-08T08:48:41.926375+00:00
+zoonomia_alignment_page	https://cglgenomics.ucsc.edu/data/cactus/	200	226407	raw_data/source_inventory/zoonomia_alignment_page.html	21b5818d1dd07c367f23f0bda5841a12d2e826b19d832aabb66d1913dbb35e6e		2026-10-08T08:48:41.926375+00:00
+toga_download_index	https://genome.senckenberg.de/download/TOGA/	200	4205	raw_data/source_inventory/toga_download_index.html	7f3b2cb65ec21ed6fe16bdc6d49ebed3825b8edd61dbc98dd85c1fa947a5b278		2026-10-08T08:48:41.926375+00:00
+toga_repository	https://github.com/hillerlab/TOGA2	200	339359	raw_data/source_inventory/toga_repository.html	7d5c0241293530ad14be53269e58cfd3ea0685c2cbba206512ae6f4d991084fc		2026-10-08T08:48:41.926375+00:00

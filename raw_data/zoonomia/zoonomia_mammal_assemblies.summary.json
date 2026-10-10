@@ -1,0 +1,9 @@
+{
+  "checked_at_utc": "2026-10-08T09:24:16.224690+00:00",
+  "source_url": "https://zoonomiaproject.org/wp-json/wp/v2/pages/418",
+  "source_page_url": "https://zoonomiaproject.org/the-mammal-tree-list-view/",
+  "source_page_id": 418,
+  "source_sha256": "ba08e8223c98ff75b8c83eb85c83b0494dc408c573bc935207747c58a5498372",
+  "roster_count": 249,
+  "output": "/home/millert/co_elimination_project/raw_data/zoonomia/zoonomia_mammal_assemblies.tsv"
+}

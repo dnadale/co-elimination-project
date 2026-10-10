@@ -1,0 +1,10 @@
+{
+  "created_at_utc": "2026-10-08T09:35:00.661708+00:00",
+  "source_availability_manifest": "/home/millert/co_elimination_project/orthologs/zoonomia_toga_file_availability.tsv",
+  "requested_count": 162,
+  "downloaded_and_validated": 160,
+  "skipped_already_valid": 2,
+  "failures": 0,
+  "total_bytes": 272988629,
+  "manifest": "/home/millert/co_elimination_project/raw_data/toga_gene_status/download_manifest.tsv"
+}

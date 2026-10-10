@@ -1,0 +1,11 @@
+{
+  "checked_at_utc": "2026-10-08T09:29:36.677461+00:00",
+  "eligible_input_count": 162,
+  "order_indexes_checked": 18,
+  "order_index_failures": {},
+  "availability_qc_counts": {
+    "status_file_verified": 162
+  },
+  "verified_status_file_count": 162,
+  "manifest": "/home/millert/co_elimination_project/orthologs/zoonomia_toga_file_availability.tsv"
+}

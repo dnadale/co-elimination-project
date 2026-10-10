@@ -2,7 +2,7 @@
 
 This reading list supports the master’s project on phenotype-agnostic coordinated gene co-elimination across placental mammals.
 
-The broader summer reading provides the evolutionary rationale for the project: gene duplication creates redundancy, pleiotropy and developmental importance impose constraint, and relaxed selection or regulatory rewiring can produce lineage-specific innovation. These topics should inform interpretation without expanding the minimum computational deliverable beyond a manageable pilot.
+The broader summer reading provides the evolutionary rationale for the project: gene duplication creates redundancy, pleiotropy and developmental importance impose constraint, and relaxed selection or regulatory rewiring can produce lineage-specific innovation. These topics should inform interpretation of the full feasible Zoonomia-scale analysis.
 
 The official Zoonomia and TOGA metadata have now been inventoried. This confirms that the literature review can be connected to reusable public annotations and gene-status outputs rather than assuming that all computational preprocessing must be recreated.
 
@@ -60,7 +60,8 @@ Why it matters: Provides useful examples of how broad mammalian comparative data
 ### Kirilenko et al. (2023)
 **Integrating gene annotation with orthology inference at scale: TOGA**
 
-Journal: Genome Biology
+Journal: Science, 380(6643), eabn3107
+DOI: [10.1126/science.abn3107](https://doi.org/10.1126/science.abn3107)
 
 Why it matters: TOGA may provide the gene-status information needed to distinguish intact genes, disrupted genes, and likely gene losses across genomes.
 
@@ -77,7 +78,7 @@ Why it matters: CESAR can help identify disrupted coding exons, frameshifts, pre
 
 Questions to answer:
 - How does CESAR complement TOGA?
-- Can it be run on the chosen pilot dataset within the project timeline?
+- Can it be run for the full selected species set within the project timeline?
 - Are precomputed CESAR results available?
 
 ### Emms and Kelly (2019)
@@ -88,7 +89,7 @@ Journal: Genome Biology
 Why it matters: Provides an alternative if suitable precomputed ortholog assignments are unavailable.
 
 Questions to answer:
-- Can OrthoFinder handle the selected pilot species?
+- Can OrthoFinder handle the selected full-scale species set?
 - What input sequence and annotation quality is required?
 - Is it necessary if TOGA already supplies orthology relationships?
 
@@ -102,7 +103,7 @@ The following topics are relevant for the literature review and discussion, but 
 - Cooper (2024): limitations of single-gene explanations for complex evolutionary traits.
 - Cardoso-Moreira and colleagues: developmental expression trajectories, pleiotropy, tissue-specific constraint, and evolutionary timing.
 - Fukushima and Pollock (2020): organ-specific expression evolution and phylogenetic expression models.
-- Reviews and case studies on convergent evolution, lineage-specific innovation, ageing, and antagonistic pleiotropy: useful conceptual context, but outside the minimum co-elimination pilot.
+- Reviews and case studies on convergent evolution, lineage-specific innovation, ageing, and antagonistic pleiotropy: useful conceptual context, but outside the core co-elimination analysis.
 
 These readings support a network-level interpretation of co-elimination and caution against assuming that similar phenotypes always use identical genetic mechanisms.
 
@@ -149,6 +150,25 @@ Journal: Proceedings of the Royal Society B
 
 Why it matters: Foundational background for testing whether two traits or gene states evolve dependently while accounting for phylogenetic relationships.
 
+## Priority 5: AI-assisted genome mining and primary data resources
+
+### Anthropic (2026)
+**Claude discovers a novel enzyme system with CRISPR-like repeats**
+
+Source: [Anthropic Science announcement](https://www.anthropic.com/news/claude-discovers-novel-enzyme-system) and its linked [technical report](https://www-cdn.anthropic.com/22573675ada52a8ca8a97a1a4b4326b2f208a071.pdf), published September 23, 2026.
+
+Why it matters: This is a case study in agent-assisted genome mining. The report describes Claude agents surveying reverse-transcriptase families, prioritizing candidate systems, writing evidence summaries, and supporting expert review. ART means array-associated reverse transcriptases and is a biological system reported mainly in bacteriophages; it is not a released algorithm or plug-in for mammalian comparative genomics, and its biological function remains under investigation.
+
+Project use: Adapt the general workflow only as an auditable candidate-triage layer after deterministic gene-status and phylogenetic analyses. AI-generated hypotheses must remain separate from measured data and require reproducible checks and expert review.
+
+### Official Zoonomia and TOGA data resources
+
+- [Zoonomia data portal](https://zoonomiaproject.org/the-data/): official access point for assemblies, the 240-species Cactus alignment, conservation scores, phylogeny, and TOGA annotations.
+- [TOGA public archive](https://genome.senckenberg.de/download/TOGA/): precomputed reference/query annotations and gene-status summaries. Consult archive README files for schemas, classifications, and pairwise-comparison limitations.
+- [TOGA source repository](https://github.com/hillerlab/TOGA2): software and implementation documentation; confirm the exact version associated with any output before citing or reproducing it.
+
+These are primary data/software resources rather than substitutes for peer-reviewed papers. Record access dates, assembly identifiers, file checksums, and exact software versions when using them.
+
 ## Paper-extraction template
 
 For every paper, record:
@@ -172,8 +192,9 @@ For every paper, record:
 2. Zoonomia Consortium (2020)
 3. Kirilenko et al. (2023), TOGA
 4. Pollard et al. (2010), phyloP
-5. Szenker-Ravi et al. (2025)
-6. CESAR 2.0 paper
-7. Emms and Kelly (2019), OrthoFinder
-8. Pagel (1994)
-9. Hubisz et al. (2011)
+5. Anthropic (2026), ART genome-mining case study and technical report
+6. Szenker-Ravi et al. (2025)
+7. CESAR 2.0 paper
+8. Emms and Kelly (2019), OrthoFinder
+9. Pagel (1994)
+10. Hubisz et al. (2011)

@@ -1,0 +1,24 @@
+{
+  "created_at_utc": "2026-10-08T09:29:05.988502+00:00",
+  "tree_source": "https://cgl.gi.ucsc.edu/data/cactus/241-mammalian-2020v2.phast-242.nh",
+  "tree_file": "/home/millert/co_elimination_project/raw_data/zoonomia/241-mammalian-2020v2.phast-242.nh",
+  "tree_sha256": "da8b5691811feaf00eea13df3eef2be3cc38ce438969ef5911086dff342cbe7d",
+  "zoonomia_roster_file": "/home/millert/co_elimination_project/raw_data/zoonomia/zoonomia_mammal_assemblies.tsv",
+  "zoonomia_roster_sha256": "5a6c93d4dc812765d891e5ed4ff244c8fcc2a83716c36722cb9c8bd38c0ae23c",
+  "toga_catalog_source": "https://genome.senckenberg.de/download/TOGA/human_hg38_reference/overview.table.tsv",
+  "toga_catalog_file": "/home/millert/co_elimination_project/raw_data/toga_inventory/overview.table.tsv",
+  "toga_catalog_sha256": "66f42c5138068efad87f28dda7ddde7ed2880c17269c693eb8205691951d12c8",
+  "tree_tip_count": 241,
+  "zoonomia_roster_entries": 249,
+  "assembly_match_rule": "Select only TOGA rows whose NCBI assembly accession exactly matches the official Zoonomia roster accession.",
+  "name_match_rule": "Exact scientific name, or a unique binomial-to-subspecies mapping flagged explicitly.",
+  "eligible_assembly_count": 162,
+  "qc_status_counts": {
+    "eligible_exact_accession": 157,
+    "eligible_exact_accession_binomial_name_match": 5,
+    "excluded_alternative_assembly_only": 62,
+    "excluded_exact_assembly_not_in_toga": 7,
+    "excluded_unverified_assembly_source": 9,
+    "reference_species_not_query": 1
+  }
+}

@@ -1,0 +1,3272 @@
+{
+  "created_at_utc": "2026-10-08T09:37:23.958692+00:00",
+  "input_download_manifest": "/home/millert/co_elimination_project/raw_data/toga_gene_status/download_manifest.tsv",
+  "input_manifest_sha256": "d819544aa222225ebe11deff15c5e5d82321fddd4da4af1d9c4b90ec8c1a95dc",
+  "matrix_file": "/home/millert/co_elimination_project/analysis/gene_status_matrix.tsv",
+  "matrix_sha256": "eeb409d7e32f1d01c242735158f487ef2a9a8c2f3438b645482efe9f0a0c112e",
+  "species_count": 162,
+  "gene_count": 19464,
+  "matrix_cell_count": 3153168,
+  "missing_cells": 0,
+  "status_meanings": {
+    "I": "intact",
+    "PI": "partially_intact",
+    "UL": "uncertain_loss",
+    "M": "missing",
+    "PM": "partially_missing",
+    "L": "lost",
+    "PG": "paralogous_projection"
+  },
+  "combined_status_counts": {
+    "I": 2356259,
+    "L": 142729,
+    "M": 92798,
+    "PG": 35910,
+    "PI": 348556,
+    "PM": 33802,
+    "UL": 143114
+  },
+  "species_qc": [
+    {
+      "species": "Acomys_cahirinus",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 103818,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 15458,
+        "L": 901,
+        "M": 274,
+        "PG": 448,
+        "PI": 1601,
+        "PM": 188,
+        "UL": 594
+      },
+      "source_file": "raw_data/toga_gene_status/Acomys_cahirinus.loss_summ_data.tsv.gz",
+      "source_sha256": "4c124075e0adf8aa7dc1b71dd4c599284db2675c6b862512bef0402726db4fd1"
+    },
+    {
+      "species": "Allactaga_bullata",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 102069,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 13477,
+        "L": 935,
+        "M": 379,
+        "PG": 451,
+        "PI": 3008,
+        "PM": 479,
+        "UL": 735
+      },
+      "source_file": "raw_data/toga_gene_status/Allactaga_bullata.loss_summ_data.tsv.gz",
+      "source_sha256": "9dbfcd70a388dd527fde3a16c3ca5b2cd2456c25413e16d65acfcd4174bfe368"
+    },
+    {
+      "species": "Alouatta_palliata",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 186892,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 15498,
+        "L": 527,
+        "M": 105,
+        "PG": 48,
+        "PI": 2405,
+        "PM": 178,
+        "UL": 703
+      },
+      "source_file": "raw_data/toga_gene_status/Alouatta_palliata.loss_summ_data.tsv.gz",
+      "source_sha256": "5bda0bb70768330851d7bc44e4b1626ad9b6c85bbdf4f3039299ceac2c3dc69a"
+    },
+    {
+      "species": "Ammotragus_lervia",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 125746,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 17582,
+        "L": 669,
+        "M": 80,
+        "PG": 64,
+        "PI": 417,
+        "PM": 14,
+        "UL": 638
+      },
+      "source_file": "raw_data/toga_gene_status/Ammotragus_lervia.loss_summ_data.tsv.gz",
+      "source_sha256": "214bd872ed4f258a7f08a3fe6c9a76116e1f315c74e119348b674a3a3dcf0098"
+    },
+    {
+      "species": "Anoura_caudifer",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 92784,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 16116,
+        "L": 1109,
+        "M": 281,
+        "PG": 296,
+        "PI": 856,
+        "PM": 162,
+        "UL": 644
+      },
+      "source_file": "raw_data/toga_gene_status/Anoura_caudifer.loss_summ_data.tsv.gz",
+      "source_sha256": "da47f7b77ac412e04d2c6524cb9a386bca5998acfc349ebdb90201fbbc56f8ef"
+    },
+    {
+      "species": "Aplodontia_rufa",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 115786,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 15596,
+        "L": 701,
+        "M": 232,
+        "PG": 177,
+        "PI": 1928,
+        "PM": 177,
+        "UL": 653
+      },
+      "source_file": "raw_data/toga_gene_status/Aplodontia_rufa.loss_summ_data.tsv.gz",
+      "source_sha256": "0b2b08b807cfccc41c0fd89c4c3bc1647bd0bfdb7646ef716f63ebdf0c2f7afe"
+    },
+    {
+      "species": "Artibeus_jamaicensis",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 109156,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 13822,
+        "L": 1047,
+        "M": 297,
+        "PG": 293,
+        "PI": 2860,
+        "PM": 339,
+        "UL": 806
+      },
+      "source_file": "raw_data/toga_gene_status/Artibeus_jamaicensis.loss_summ_data.tsv.gz",
+      "source_sha256": "b077ba7045390ed79066cf5177c22f6e1bd926be30a65ef3b0fccfe6d1585690"
+    },
+    {
+      "species": "Ateles_geoffroyi",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 178661,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 15473,
+        "L": 463,
+        "M": 130,
+        "PG": 55,
+        "PI": 2486,
+        "PM": 183,
+        "UL": 674
+      },
+      "source_file": "raw_data/toga_gene_status/Ateles_geoffroyi.loss_summ_data.tsv.gz",
+      "source_sha256": "ab2f4fa355a4b826293811cb707ffed698f78227c22d75d8975bab612d1dd4a1"
+    },
+    {
+      "species": "Balaenoptera_acutorostrata",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 120007,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 13621,
+        "L": 1208,
+        "M": 832,
+        "PG": 29,
+        "PI": 2349,
+        "PM": 13,
+        "UL": 1412
+      },
+      "source_file": "raw_data/toga_gene_status/Balaenoptera_acutorostrata.loss_summ_data.tsv.gz",
+      "source_sha256": "8bde90932f6569fe69e12d102ef6b9c86dee8b5e0a54a90a806fde1fae267fb4"
+    },
+    {
+      "species": "Balaenoptera_bonaerensis",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 69701,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 12177,
+        "L": 906,
+        "M": 1049,
+        "PG": 485,
+        "PI": 3443,
+        "PM": 407,
+        "UL": 997
+      },
+      "source_file": "raw_data/toga_gene_status/Balaenoptera_bonaerensis.loss_summ_data.tsv.gz",
+      "source_sha256": "c3ed5b1e2d35bf19aed4e6249ac242af14c71cb4f97d4d206d34b947bd0811a0"
+    },
+    {
+      "species": "Beatragus_hunteri",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 104953,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 16258,
+        "L": 720,
+        "M": 188,
+        "PG": 162,
+        "PI": 1387,
+        "PM": 123,
+        "UL": 626
+      },
+      "source_file": "raw_data/toga_gene_status/Beatragus_hunteri.loss_summ_data.tsv.gz",
+      "source_sha256": "d70f6341a0fd5a133555d0d1706a47a6cb833cd64b5a1127585af403d951b45a"
+    },
+    {
+      "species": "Bison_bison",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 132989,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 12675,
+        "L": 878,
+        "M": 1467,
+        "PG": 62,
+        "PI": 3318,
+        "PM": 41,
+        "UL": 1023
+      },
+      "source_file": "raw_data/toga_gene_status/Bison_bison.loss_summ_data.tsv.gz",
+      "source_sha256": "d52496270ffbbbf739bfa39f4b275ba80e89e6e4160fd5e07722596dfb7827c9"
+    },
+    {
+      "species": "Callicebus_donacophilus",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 175433,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 14614,
+        "L": 660,
+        "M": 200,
+        "PG": 80,
+        "PI": 2757,
+        "PM": 201,
+        "UL": 952
+      },
+      "source_file": "raw_data/toga_gene_status/Callicebus_donacophilus.loss_summ_data.tsv.gz",
+      "source_sha256": "80073afe1d5adcd9b7fa788ed27a34c874d190120e2b079e407ec2ce5e525099"
+    },
+    {
+      "species": "Canis_lupus",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 125952,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 16251,
+        "L": 761,
+        "M": 323,
+        "PG": 11,
+        "PI": 1036,
+        "PM": 5,
+        "UL": 1077
+      },
+      "source_file": "raw_data/toga_gene_status/Canis_lupus.loss_summ_data.tsv.gz",
+      "source_sha256": "31af8ac96ee3785df687b61c0e67a482668573000dae7aeb80969d4e8ef6ce2b"
+    },
+    {
+      "species": "Canis_lupus_familiaris",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 125952,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 16251,
+        "L": 761,
+        "M": 323,
+        "PG": 11,
+        "PI": 1036,
+        "PM": 5,
+        "UL": 1077
+      },
+      "source_file": "raw_data/toga_gene_status/Canis_lupus_familiaris.loss_summ_data.tsv.gz",
+      "source_sha256": "31af8ac96ee3785df687b61c0e67a482668573000dae7aeb80969d4e8ef6ce2b"
+    },
+    {
+      "species": "Carollia_perspicillata",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 106406,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 9799,
+        "L": 1050,
+        "M": 782,
+        "PG": 597,
+        "PI": 5268,
+        "PM": 1072,
+        "UL": 896
+      },
+      "source_file": "raw_data/toga_gene_status/Carollia_perspicillata.loss_summ_data.tsv.gz",
+      "source_sha256": "c1bce82551ae120812dd6107efb5f60393dbc11109c492f2110195f844875f6a"
+    },
+    {
+      "species": "Cavia_aperea",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 98017,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 4651,
+        "L": 891,
+        "M": 4564,
+        "PG": 168,
+        "PI": 7999,
+        "PM": 23,
+        "UL": 1168
+      },
+      "source_file": "raw_data/toga_gene_status/Cavia_aperea.loss_summ_data.tsv.gz",
+      "source_sha256": "0a4f1d745a0f2b7397703cc225e25eb6311d5dd9a2e22ab497a9a4142300ddcc"
+    },
+    {
+      "species": "Cavia_porcellus",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 136284,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 14906,
+        "L": 1076,
+        "M": 411,
+        "PG": 74,
+        "PI": 1303,
+        "PM": 8,
+        "UL": 1686
+      },
+      "source_file": "raw_data/toga_gene_status/Cavia_porcellus.loss_summ_data.tsv.gz",
+      "source_sha256": "aa1dba22ce469fd82ddaf4c858698c9363f122098dfffc3e59191e3f48ebd3af"
+    },
+    {
+      "species": "Cavia_tschudii",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 111522,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 16601,
+        "L": 966,
+        "M": 167,
+        "PG": 196,
+        "PI": 776,
+        "PM": 70,
+        "UL": 688
+      },
+      "source_file": "raw_data/toga_gene_status/Cavia_tschudii.loss_summ_data.tsv.gz",
+      "source_sha256": "2a5cfb8c530a1cc37d91b1c27bce778c14cf9ba8eafe0cb9086d96cbab7adfbf"
+    },
+    {
+      "species": "Cebus_albifrons",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 181169,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 13558,
+        "L": 551,
+        "M": 218,
+        "PG": 100,
+        "PI": 3894,
+        "PM": 313,
+        "UL": 830
+      },
+      "source_file": "raw_data/toga_gene_status/Cebus_albifrons.loss_summ_data.tsv.gz",
+      "source_sha256": "86e7e5ed6516fbe6067404bc352d1bff5ad3f72295fc54bfd894886fc62071f3"
+    },
+    {
+      "species": "Cebus_capucinus",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 196839,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 16962,
+        "L": 343,
+        "M": 249,
+        "PG": 1,
+        "PI": 1226,
+        "PM": 4,
+        "UL": 679
+      },
+      "source_file": "raw_data/toga_gene_status/Cebus_capucinus.loss_summ_data.tsv.gz",
+      "source_sha256": "776b5d019e82cff456494ef35ee0e9a96d788585e430163c172d9e2c19a1ce2c"
+    },
+    {
+      "species": "Ceratotherium_simum",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 149750,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 16901,
+        "L": 623,
+        "M": 333,
+        "PG": 13,
+        "PI": 916,
+        "PM": 11,
+        "UL": 667
+      },
+      "source_file": "raw_data/toga_gene_status/Ceratotherium_simum.loss_summ_data.tsv.gz",
+      "source_sha256": "ee855dce42cc1d0ba94866ce07f0fe4f2ca18575a839e7b450216a9afd3b3c56"
+    },
+    {
+      "species": "Ceratotherium_simum_cottoni",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 123575,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 14229,
+        "L": 602,
+        "M": 274,
+        "PG": 169,
+        "PI": 3099,
+        "PM": 243,
+        "UL": 848
+      },
+      "source_file": "raw_data/toga_gene_status/Ceratotherium_simum_cottoni.loss_summ_data.tsv.gz",
+      "source_sha256": "cf12749bc2863569d1b3db3730d4bb357812103c55e9ae37bf3d2aa678cf396b"
+    },
+    {
+      "species": "Cercocebus_atys",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 224259,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 17539,
+        "L": 348,
+        "M": 32,
+        "PG": 4,
+        "PI": 436,
+        "PM": 3,
+        "UL": 1102
+      },
+      "source_file": "raw_data/toga_gene_status/Cercocebus_atys.loss_summ_data.tsv.gz",
+      "source_sha256": "d819b40be0bb39f6dac10ce0341190d66b2da8f997f6f6676b69d7182763ce4e"
+    },
+    {
+      "species": "Cercopithecus_neglectus",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 178005,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 12568,
+        "L": 542,
+        "M": 324,
+        "PG": 160,
+        "PI": 4681,
+        "PM": 489,
+        "UL": 700
+      },
+      "source_file": "raw_data/toga_gene_status/Cercopithecus_neglectus.loss_summ_data.tsv.gz",
+      "source_sha256": "4a432c01da79d2a9b8865e50f0f69ba408555b5aa8312f18df7e85d1986fb31a"
+    },
+    {
+      "species": "Chinchilla_lanigera",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 119440,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 15697,
+        "L": 971,
+        "M": 590,
+        "PG": 43,
+        "PI": 1489,
+        "PM": 8,
+        "UL": 666
+      },
+      "source_file": "raw_data/toga_gene_status/Chinchilla_lanigera.loss_summ_data.tsv.gz",
+      "source_sha256": "298aacb2840816084f53acc3388f76a94a07649248e308295fc57d4960065a25"
+    },
+    {
+      "species": "Chlorocebus_sabaeus",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 232796,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 17746,
+        "L": 290,
+        "M": 78,
+        "PG": 1,
+        "PI": 720,
+        "PM": 5,
+        "UL": 624
+      },
+      "source_file": "raw_data/toga_gene_status/Chlorocebus_sabaeus.loss_summ_data.tsv.gz",
+      "source_sha256": "8f643c85c34e7d3919db7235ae6e8c7afcc756c490bf13c912e2123168f0c7db"
+    },
+    {
+      "species": "Choloepus_didactylus",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 107846,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 8891,
+        "L": 949,
+        "M": 982,
+        "PG": 568,
+        "PI": 5707,
+        "PM": 1230,
+        "UL": 1137
+      },
+      "source_file": "raw_data/toga_gene_status/Choloepus_didactylus.loss_summ_data.tsv.gz",
+      "source_sha256": "4b59abdbf89f9d0001725adbcf0c1f7fd586e05df988e6b4d88695baeadcb9ce"
+    },
+    {
+      "species": "Colobus_angolensis",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 197323,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 15279,
+        "L": 501,
+        "M": 531,
+        "PG": 4,
+        "PI": 2486,
+        "PM": 8,
+        "UL": 655
+      },
+      "source_file": "raw_data/toga_gene_status/Colobus_angolensis.loss_summ_data.tsv.gz",
+      "source_sha256": "721ba9f3b003bb9bfc1f721fd439deef248be91efe2f0bb9e8724de879bc0906"
+    },
+    {
+      "species": "Condylura_cristata",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 103596,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 14116,
+        "L": 1197,
+        "M": 1363,
+        "PG": 455,
+        "PI": 1744,
+        "PM": 19,
+        "UL": 570
+      },
+      "source_file": "raw_data/toga_gene_status/Condylura_cristata.loss_summ_data.tsv.gz",
+      "source_sha256": "3c49fbb8408d096ac867e5d8b4ad164ec63d0c74245ab092d7df02ba898e0fb2"
+    },
+    {
+      "species": "Craseonycteris_thonglongyai",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 96002,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 14520,
+        "L": 1016,
+        "M": 303,
+        "PG": 372,
+        "PI": 2251,
+        "PM": 281,
+        "UL": 721
+      },
+      "source_file": "raw_data/toga_gene_status/Craseonycteris_thonglongyai.loss_summ_data.tsv.gz",
+      "source_sha256": "09db8e3365ca76d22401535904c86d1cadc59aab0cbb866fc9763b18738334b9"
+    },
+    {
+      "species": "Cricetomys_gambianus",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 100983,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 15971,
+        "L": 1057,
+        "M": 234,
+        "PG": 354,
+        "PI": 1110,
+        "PM": 133,
+        "UL": 605
+      },
+      "source_file": "raw_data/toga_gene_status/Cricetomys_gambianus.loss_summ_data.tsv.gz",
+      "source_sha256": "4b3bd1e10d41505422ee0ac932e44fe1a5ce27a9cd1e818e5ab53642a4d81734"
+    },
+    {
+      "species": "Ctenodactylus_gundi",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 90552,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 16846,
+        "L": 1135,
+        "M": 156,
+        "PG": 170,
+        "PI": 478,
+        "PM": 39,
+        "UL": 640
+      },
+      "source_file": "raw_data/toga_gene_status/Ctenodactylus_gundi.loss_summ_data.tsv.gz",
+      "source_sha256": "b74910757796b91ca97022c2edffae44c22b1d59ccbe048e5ed87291af7ab975"
+    },
+    {
+      "species": "Ctenomys_sociabilis",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 96292,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 15267,
+        "L": 937,
+        "M": 367,
+        "PG": 327,
+        "PI": 1655,
+        "PM": 208,
+        "UL": 703
+      },
+      "source_file": "raw_data/toga_gene_status/Ctenomys_sociabilis.loss_summ_data.tsv.gz",
+      "source_sha256": "78e441162be0744bf5fb4911e59b4f8ddfb1f2d8076bc841629d96f568a89dbd"
+    },
+    {
+      "species": "Dasyprocta_punctata",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 129059,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 14214,
+        "L": 839,
+        "M": 256,
+        "PG": 246,
+        "PI": 2829,
+        "PM": 341,
+        "UL": 739
+      },
+      "source_file": "raw_data/toga_gene_status/Dasyprocta_punctata.loss_summ_data.tsv.gz",
+      "source_sha256": "b6d72ed4ea36f7cdefbc7ad7157f2375a78aa13344d44689af8f6862a4c72ced"
+    },
+    {
+      "species": "Dasypus_novemcinctus",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 134206,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 12714,
+        "L": 795,
+        "M": 857,
+        "PG": 117,
+        "PI": 3262,
+        "PM": 35,
+        "UL": 1684
+      },
+      "source_file": "raw_data/toga_gene_status/Dasypus_novemcinctus.loss_summ_data.tsv.gz",
+      "source_sha256": "9f7519a72c57705dea394f79a46cf75037ce3e3aba7bd6e58c6c1ffda23c4f26"
+    },
+    {
+      "species": "Daubentonia_madagascariensis",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 143777,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 17853,
+        "L": 492,
+        "M": 70,
+        "PG": 27,
+        "PI": 505,
+        "PM": 15,
+        "UL": 502
+      },
+      "source_file": "raw_data/toga_gene_status/Daubentonia_madagascariensis.loss_summ_data.tsv.gz",
+      "source_sha256": "18ce8a062edba8bd6bddd67aa7728afb1d08bff4a367230b2bb7c526c7c31b9c"
+    },
+    {
+      "species": "Dicerorhinus_sumatrensis",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 157931,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 17373,
+        "L": 514,
+        "M": 117,
+        "PG": 27,
+        "PI": 672,
+        "PM": 23,
+        "UL": 738
+      },
+      "source_file": "raw_data/toga_gene_status/Dicerorhinus_sumatrensis.loss_summ_data.tsv.gz",
+      "source_sha256": "596ea0e1b16f50197bfe818b5880397d31547ca31508fcefbabc95ef05917c70"
+    },
+    {
+      "species": "Dinomys_branickii",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 107571,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 16435,
+        "L": 841,
+        "M": 199,
+        "PG": 205,
+        "PI": 943,
+        "PM": 93,
+        "UL": 748
+      },
+      "source_file": "raw_data/toga_gene_status/Dinomys_branickii.loss_summ_data.tsv.gz",
+      "source_sha256": "0770ba844cee6c6267102c34f06a1647bd9f986f8c561eb30ad56dffa3f5683e"
+    },
+    {
+      "species": "Dipodomys_ordii",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 73917,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 13604,
+        "L": 1018,
+        "M": 913,
+        "PG": 130,
+        "PI": 2864,
+        "PM": 43,
+        "UL": 892
+      },
+      "source_file": "raw_data/toga_gene_status/Dipodomys_ordii.loss_summ_data.tsv.gz",
+      "source_sha256": "80352f56d5b490fc6819ce841b2d3b8805109fd7c6ce4a6467b3176ed95ed345"
+    },
+    {
+      "species": "Dipodomys_stephensi",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 102005,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 14627,
+        "L": 1045,
+        "M": 301,
+        "PG": 587,
+        "PI": 1896,
+        "PM": 359,
+        "UL": 649
+      },
+      "source_file": "raw_data/toga_gene_status/Dipodomys_stephensi.loss_summ_data.tsv.gz",
+      "source_sha256": "0f66bcb68581c241a2426701ab134971351c7b61879e299d10697f8a050d5cf1"
+    },
+    {
+      "species": "Dolichotis_patagonum",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 110317,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 14887,
+        "L": 948,
+        "M": 283,
+        "PG": 295,
+        "PI": 2065,
+        "PM": 229,
+        "UL": 757
+      },
+      "source_file": "raw_data/toga_gene_status/Dolichotis_patagonum.loss_summ_data.tsv.gz",
+      "source_sha256": "fdab1dda2c9eb465cb5dd848e18c609d377cbeb74428f6e90c7607d685d63b02"
+    },
+    {
+      "species": "Echinops_telfairi",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 109583,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 12885,
+        "L": 992,
+        "M": 1213,
+        "PG": 134,
+        "PI": 3550,
+        "PM": 12,
+        "UL": 678
+      },
+      "source_file": "raw_data/toga_gene_status/Echinops_telfairi.loss_summ_data.tsv.gz",
+      "source_sha256": "cf421b11430dc96215e08ef407937d00d42cd6ae471d104ac75e4439cfcb6fd5"
+    },
+    {
+      "species": "Elaphurus_davidianus",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 133705,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 16407,
+        "L": 718,
+        "M": 358,
+        "PG": 36,
+        "PI": 1154,
+        "PM": 19,
+        "UL": 772
+      },
+      "source_file": "raw_data/toga_gene_status/Elaphurus_davidianus.loss_summ_data.tsv.gz",
+      "source_sha256": "3f158fdcb98fcccd5b5b583dcada7cbb6cdd25895d711c811bfee2d992dfb471"
+    },
+    {
+      "species": "Ellobius_lutescens",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 99301,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 10001,
+        "L": 1176,
+        "M": 1980,
+        "PG": 340,
+        "PI": 4022,
+        "PM": 96,
+        "UL": 1849
+      },
+      "source_file": "raw_data/toga_gene_status/Ellobius_lutescens.loss_summ_data.tsv.gz",
+      "source_sha256": "1a89439398570255759b0f610595e9960ef7975a2dca7d5b55cb5c14b4c6bd9f"
+    },
+    {
+      "species": "Ellobius_talpinus",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 96404,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 11460,
+        "L": 937,
+        "M": 1009,
+        "PG": 805,
+        "PI": 3665,
+        "PM": 643,
+        "UL": 945
+      },
+      "source_file": "raw_data/toga_gene_status/Ellobius_talpinus.loss_summ_data.tsv.gz",
+      "source_sha256": "fa616ee4f66979ca892d17f804f8bec83a55671eead4070464e7513b0e876152"
+    },
+    {
+      "species": "Enhydra_lutris",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 132066,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 17533,
+        "L": 784,
+        "M": 100,
+        "PG": 10,
+        "PI": 200,
+        "PM": 8,
+        "UL": 829
+      },
+      "source_file": "raw_data/toga_gene_status/Enhydra_lutris.loss_summ_data.tsv.gz",
+      "source_sha256": "d04936d9c98474e73d2c2f22cbc0a6f30154e0751ce7f571a06a912cbf5906b4"
+    },
+    {
+      "species": "Eptesicus_fuscus",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 112019,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 14973,
+        "L": 1083,
+        "M": 720,
+        "PG": 92,
+        "PI": 2010,
+        "PM": 24,
+        "UL": 562
+      },
+      "source_file": "raw_data/toga_gene_status/Eptesicus_fuscus.loss_summ_data.tsv.gz",
+      "source_sha256": "7c0cad797f911f95102a614f89db499580a34259b79505a418c79a64150e36e2"
+    },
+    {
+      "species": "Equus_przewalskii",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 128179,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 13236,
+        "L": 619,
+        "M": 1022,
+        "PG": 70,
+        "PI": 2949,
+        "PM": 87,
+        "UL": 1481
+      },
+      "source_file": "raw_data/toga_gene_status/Equus_przewalskii.loss_summ_data.tsv.gz",
+      "source_sha256": "bbdc1e90c65e96a8b791b3004c24e9d22e35b1ee2df39d147960550d7e00805b"
+    },
+    {
+      "species": "Erinaceus_europaeus",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 109577,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 14350,
+        "L": 982,
+        "M": 884,
+        "PG": 650,
+        "PI": 1905,
+        "PM": 37,
+        "UL": 656
+      },
+      "source_file": "raw_data/toga_gene_status/Erinaceus_europaeus.loss_summ_data.tsv.gz",
+      "source_sha256": "2f454edf23c12f302b4bfa730696416ed2a8f081173df6195c07abc705c47803"
+    },
+    {
+      "species": "Erythrocebus_patas",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 185421,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 14768,
+        "L": 393,
+        "M": 131,
+        "PG": 42,
+        "PI": 3269,
+        "PM": 249,
+        "UL": 612
+      },
+      "source_file": "raw_data/toga_gene_status/Erythrocebus_patas.loss_summ_data.tsv.gz",
+      "source_sha256": "e1385ec30ad1c4bc43a71c471d4a9fa4434afa5350803d45b70e5e9ec33e4704"
+    },
+    {
+      "species": "Eschrichtius_robustus",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 95810,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 16179,
+        "L": 1131,
+        "M": 185,
+        "PG": 124,
+        "PI": 897,
+        "PM": 82,
+        "UL": 866
+      },
+      "source_file": "raw_data/toga_gene_status/Eschrichtius_robustus.loss_summ_data.tsv.gz",
+      "source_sha256": "20bf9839994c6fffb20cca70fde1f8b3dd6092e82fc2119c96694d794160fa50"
+    },
+    {
+      "species": "Eubalaena_japonica",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 96485,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 15252,
+        "L": 1075,
+        "M": 215,
+        "PG": 201,
+        "PI": 1679,
+        "PM": 135,
+        "UL": 907
+      },
+      "source_file": "raw_data/toga_gene_status/Eubalaena_japonica.loss_summ_data.tsv.gz",
+      "source_sha256": "230bb95b82a10ec9cb656c3e2bb9295537e239639074d8bea73da9a4783edca6"
+    },
+    {
+      "species": "Eulemur_flavifrons",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 130162,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 16697,
+        "L": 565,
+        "M": 337,
+        "PG": 81,
+        "PI": 1010,
+        "PM": 83,
+        "UL": 691
+      },
+      "source_file": "raw_data/toga_gene_status/Eulemur_flavifrons.loss_summ_data.tsv.gz",
+      "source_sha256": "7c0c35d8b613491adf8558a0d0782630da285e8f6d679fc404ad80520e5a0ff6"
+    },
+    {
+      "species": "Eulemur_fulvus",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 150153,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 12737,
+        "L": 667,
+        "M": 268,
+        "PG": 150,
+        "PI": 4468,
+        "PM": 408,
+        "UL": 766
+      },
+      "source_file": "raw_data/toga_gene_status/Eulemur_fulvus.loss_summ_data.tsv.gz",
+      "source_sha256": "f2d162e59861be0e90298c8cf9bb2666170c83c6b3ec5790a5bafa256cfa4a89"
+    },
+    {
+      "species": "Felis_nigripes",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 87874,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 11131,
+        "L": 776,
+        "M": 687,
+        "PG": 425,
+        "PI": 4722,
+        "PM": 922,
+        "UL": 801
+      },
+      "source_file": "raw_data/toga_gene_status/Felis_nigripes.loss_summ_data.tsv.gz",
+      "source_sha256": "34d122358ef3caab62112bcedf4f68a6021d68e90a5cc4ea37fa2100f5cdcff0"
+    },
+    {
+      "species": "Giraffa_tippelskirchi",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 77747,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 16052,
+        "L": 739,
+        "M": 219,
+        "PG": 82,
+        "PI": 1442,
+        "PM": 80,
+        "UL": 850
+      },
+      "source_file": "raw_data/toga_gene_status/Giraffa_tippelskirchi.loss_summ_data.tsv.gz",
+      "source_sha256": "a70687ff26f4fc307e95ac7b2c915a952111b0dbafdf20d4d1143125458fef89"
+    },
+    {
+      "species": "Glis_glis",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 110081,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 14596,
+        "L": 652,
+        "M": 243,
+        "PG": 251,
+        "PI": 2784,
+        "PM": 345,
+        "UL": 593
+      },
+      "source_file": "raw_data/toga_gene_status/Glis_glis.loss_summ_data.tsv.gz",
+      "source_sha256": "9b8ab605124a1f39ab992f6fd8c9b7d4307e92331aceef411abee37d423b7f01"
+    },
+    {
+      "species": "Graphiurus_murinus",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 128302,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 13133,
+        "L": 762,
+        "M": 369,
+        "PG": 307,
+        "PI": 3442,
+        "PM": 700,
+        "UL": 751
+      },
+      "source_file": "raw_data/toga_gene_status/Graphiurus_murinus.loss_summ_data.tsv.gz",
+      "source_sha256": "6bcb7edeb786eaf2642d71a57d70d964ce91c2bed5e6ad75a5a70615945f758f"
+    },
+    {
+      "species": "Helogale_parvula",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 104693,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 16277,
+        "L": 755,
+        "M": 403,
+        "PG": 98,
+        "PI": 1205,
+        "PM": 87,
+        "UL": 639
+      },
+      "source_file": "raw_data/toga_gene_status/Helogale_parvula.loss_summ_data.tsv.gz",
+      "source_sha256": "d4aca4167acff3bb0d7b05086f89b3a07498a64f0d7be0a9bcfbb67837e2224e"
+    },
+    {
+      "species": "Hemitragus_hylocrius",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 109547,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 16534,
+        "L": 679,
+        "M": 191,
+        "PG": 166,
+        "PI": 1177,
+        "PM": 93,
+        "UL": 624
+      },
+      "source_file": "raw_data/toga_gene_status/Hemitragus_hylocrius.loss_summ_data.tsv.gz",
+      "source_sha256": "d62de0d6e54e69abe08b9f7e662e7b4986108eedac8f51f32031e40557c77b6c"
+    },
+    {
+      "species": "Heterocephalus_glaber",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 126233,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 16491,
+        "L": 1113,
+        "M": 253,
+        "PG": 39,
+        "PI": 609,
+        "PM": 15,
+        "UL": 944
+      },
+      "source_file": "raw_data/toga_gene_status/Heterocephalus_glaber.loss_summ_data.tsv.gz",
+      "source_sha256": "e75ca17b26a03bf1fb542aeca72d820824b09ad2bce76055b6de3e79b5cd6718"
+    },
+    {
+      "species": "Heterohyrax_brucei",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 100443,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 15408,
+        "L": 820,
+        "M": 454,
+        "PG": 214,
+        "PI": 1675,
+        "PM": 187,
+        "UL": 706
+      },
+      "source_file": "raw_data/toga_gene_status/Heterohyrax_brucei.loss_summ_data.tsv.gz",
+      "source_sha256": "824fcde86770fb9bb89aa1a903f76f960d0e10cef621c93caa171b16f612396b"
+    },
+    {
+      "species": "Hipposideros_armiger",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 107761,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 14321,
+        "L": 956,
+        "M": 603,
+        "PG": 59,
+        "PI": 2484,
+        "PM": 34,
+        "UL": 1007
+      },
+      "source_file": "raw_data/toga_gene_status/Hipposideros_armiger.loss_summ_data.tsv.gz",
+      "source_sha256": "4566628695fd8f953ec3f9c3fc51707145c3e8219de6a5fbd4b422c30c60ca2d"
+    },
+    {
+      "species": "Hipposideros_galeritus",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 106252,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 14590,
+        "L": 908,
+        "M": 255,
+        "PG": 256,
+        "PI": 2515,
+        "PM": 177,
+        "UL": 763
+      },
+      "source_file": "raw_data/toga_gene_status/Hipposideros_galeritus.loss_summ_data.tsv.gz",
+      "source_sha256": "dc55fa3a5f1b93f4a54aa111a534509b9ce9cc5a965ab4a03fe06bf43b661e2c"
+    },
+    {
+      "species": "Hydrochoerus_hydrochaeris",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 119232,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 16658,
+        "L": 954,
+        "M": 181,
+        "PG": 176,
+        "PI": 595,
+        "PM": 74,
+        "UL": 826
+      },
+      "source_file": "raw_data/toga_gene_status/Hydrochoerus_hydrochaeris.loss_summ_data.tsv.gz",
+      "source_sha256": "e5a745daf913179ef84174c8f97973502d1b875803a0ebc2c3245c752a59f06e"
+    },
+    {
+      "species": "Hystrix_cristata",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 95377,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 15575,
+        "L": 896,
+        "M": 231,
+        "PG": 189,
+        "PI": 1713,
+        "PM": 164,
+        "UL": 696
+      },
+      "source_file": "raw_data/toga_gene_status/Hystrix_cristata.loss_summ_data.tsv.gz",
+      "source_sha256": "b301728b38b18107d1d6d6cb29a546b29fb661fc54436d4a87781f64506f76de"
+    },
+    {
+      "species": "Ictidomys_tridecemlineatus",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 133523,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 15826,
+        "L": 694,
+        "M": 510,
+        "PG": 39,
+        "PI": 1767,
+        "PM": 21,
+        "UL": 607
+      },
+      "source_file": "raw_data/toga_gene_status/Ictidomys_tridecemlineatus.loss_summ_data.tsv.gz",
+      "source_sha256": "f36787d7ba9370d235e3f77d1ab96b44de8e79b27e29494df2a88a5ed30ff81d"
+    },
+    {
+      "species": "Indri_indri",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 141951,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 13783,
+        "L": 753,
+        "M": 235,
+        "PG": 125,
+        "PI": 3378,
+        "PM": 345,
+        "UL": 845
+      },
+      "source_file": "raw_data/toga_gene_status/Indri_indri.loss_summ_data.tsv.gz",
+      "source_sha256": "ee50baf23a259fb1405f9255755aca5ee6f64b5f892ddbb136538176785a34cd"
+    },
+    {
+      "species": "Inia_geoffrensis",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 95006,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 14350,
+        "L": 1366,
+        "M": 202,
+        "PG": 320,
+        "PI": 2028,
+        "PM": 242,
+        "UL": 956
+      },
+      "source_file": "raw_data/toga_gene_status/Inia_geoffrensis.loss_summ_data.tsv.gz",
+      "source_sha256": "05681595220d7a8216ad5cb859e599d88715f4c4aa238cd24bc73e40aaee18ca"
+    },
+    {
+      "species": "Jaculus_jaculus",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 101761,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 14239,
+        "L": 1088,
+        "M": 875,
+        "PG": 84,
+        "PI": 2356,
+        "PM": 25,
+        "UL": 797
+      },
+      "source_file": "raw_data/toga_gene_status/Jaculus_jaculus.loss_summ_data.tsv.gz",
+      "source_sha256": "659f63df99a6277bcf73e827dbf5169d9e5c760fc6305cb084291c84bd41e5b0"
+    },
+    {
+      "species": "Kogia_breviceps",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 73313,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 14203,
+        "L": 1406,
+        "M": 327,
+        "PG": 323,
+        "PI": 2071,
+        "PM": 192,
+        "UL": 942
+      },
+      "source_file": "raw_data/toga_gene_status/Kogia_breviceps.loss_summ_data.tsv.gz",
+      "source_sha256": "bfb89aac0a4de02678d55a0a6dbd065d52e2d8acc444bfdb858ddf6c36a49697"
+    },
+    {
+      "species": "Lasiurus_borealis",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 163012,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 11165,
+        "L": 1329,
+        "M": 677,
+        "PG": 525,
+        "PI": 4040,
+        "PM": 635,
+        "UL": 1093
+      },
+      "source_file": "raw_data/toga_gene_status/Lasiurus_borealis.loss_summ_data.tsv.gz",
+      "source_sha256": "1ee88177dd7895937e1ea3ddca0927da38ba3b130b5b6e68ad8882c6f010315a"
+    },
+    {
+      "species": "Lemur_catta",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 137475,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 16927,
+        "L": 571,
+        "M": 117,
+        "PG": 46,
+        "PI": 1134,
+        "PM": 66,
+        "UL": 603
+      },
+      "source_file": "raw_data/toga_gene_status/Lemur_catta.loss_summ_data.tsv.gz",
+      "source_sha256": "586be50d2fedcb585b7572fe74125eb28d525729e217080678146299aafec8af"
+    },
+    {
+      "species": "Leptonychotes_weddellii",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 118575,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 11760,
+        "L": 792,
+        "M": 1022,
+        "PG": 50,
+        "PI": 4916,
+        "PM": 27,
+        "UL": 897
+      },
+      "source_file": "raw_data/toga_gene_status/Leptonychotes_weddellii.loss_summ_data.tsv.gz",
+      "source_sha256": "f6fa2d6ccf31c550ef12227984e9fef2a4701cbe968860c01369c6cc5d6e3879"
+    },
+    {
+      "species": "Lepus_americanus",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 102484,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 11749,
+        "L": 930,
+        "M": 455,
+        "PG": 533,
+        "PI": 4265,
+        "PM": 788,
+        "UL": 744
+      },
+      "source_file": "raw_data/toga_gene_status/Lepus_americanus.loss_summ_data.tsv.gz",
+      "source_sha256": "634b02dc5496cd3cfcd368fa25009f253e7121747777d1e1c0210393b3e4f43d"
+    },
+    {
+      "species": "Lipotes_vexillifer",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 103091,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 14917,
+        "L": 1490,
+        "M": 437,
+        "PG": 75,
+        "PI": 1395,
+        "PM": 11,
+        "UL": 1139
+      },
+      "source_file": "raw_data/toga_gene_status/Lipotes_vexillifer.loss_summ_data.tsv.gz",
+      "source_sha256": "ac4b111977a39c54bdf9e01e318e9d7990d2c9e26bcb8a2f9ca5c31e6a37195f"
+    },
+    {
+      "species": "Macaca_nemestrina",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 227642,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 17435,
+        "L": 291,
+        "M": 34,
+        "PG": 1,
+        "PI": 565,
+        "PM": 1,
+        "UL": 1137
+      },
+      "source_file": "raw_data/toga_gene_status/Macaca_nemestrina.loss_summ_data.tsv.gz",
+      "source_sha256": "c808af8d0e19b0bbb09030b1856cd5af0e19fa47a65a9bd34274e9342d0bea8a"
+    },
+    {
+      "species": "Macroglossus_sobrinus",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 100019,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 16536,
+        "L": 1083,
+        "M": 157,
+        "PG": 130,
+        "PI": 827,
+        "PM": 76,
+        "UL": 655
+      },
+      "source_file": "raw_data/toga_gene_status/Macroglossus_sobrinus.loss_summ_data.tsv.gz",
+      "source_sha256": "174f4072f060e5bc7440379ce41fe43a31430eec87de2cabce5c5dbfb28737e0"
+    },
+    {
+      "species": "Mandrillus_leucophaeus",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 203098,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 14927,
+        "L": 409,
+        "M": 628,
+        "PG": 5,
+        "PI": 2951,
+        "PM": 6,
+        "UL": 538
+      },
+      "source_file": "raw_data/toga_gene_status/Mandrillus_leucophaeus.loss_summ_data.tsv.gz",
+      "source_sha256": "2be74d120e70e841606a5bcc46772ecb8a97e89a340d8ac21bc4c3697e2368db"
+    },
+    {
+      "species": "Manis_pentadactyla",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 94584,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 10710,
+        "L": 1253,
+        "M": 1747,
+        "PG": 270,
+        "PI": 3794,
+        "PM": 454,
+        "UL": 1236
+      },
+      "source_file": "raw_data/toga_gene_status/Manis_pentadactyla.loss_summ_data.tsv.gz",
+      "source_sha256": "86b3887dddec0d64c4c9041da79007a92231b16e37eb3c856d7576491907aad9"
+    },
+    {
+      "species": "Marmota_marmota",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 145764,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 15582,
+        "L": 793,
+        "M": 452,
+        "PG": 14,
+        "PI": 1454,
+        "PM": 1,
+        "UL": 1168
+      },
+      "source_file": "raw_data/toga_gene_status/Marmota_marmota.loss_summ_data.tsv.gz",
+      "source_sha256": "99a331e7b8d7e02c304a573c5c6a059e25664c906b512ba46f0ac4d180dbb4a9"
+    },
+    {
+      "species": "Megaderma_lyra",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 113146,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 16508,
+        "L": 1009,
+        "M": 181,
+        "PG": 185,
+        "PI": 904,
+        "PM": 88,
+        "UL": 589
+      },
+      "source_file": "raw_data/toga_gene_status/Megaderma_lyra.loss_summ_data.tsv.gz",
+      "source_sha256": "aaef99002ea7bf40a9ed77cd45d6500fb43651ecc04eef0fcda0e7c15f5be78a"
+    },
+    {
+      "species": "Mellivora_capensis",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 92402,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 16160,
+        "L": 715,
+        "M": 407,
+        "PG": 155,
+        "PI": 1278,
+        "PM": 107,
+        "UL": 642
+      },
+      "source_file": "raw_data/toga_gene_status/Mellivora_capensis.loss_summ_data.tsv.gz",
+      "source_sha256": "04d4f2242b7dc16a39aa3da677e77934a1621a823ecc6b63b5d613f26b87e1e9"
+    },
+    {
+      "species": "Mesocricetus_auratus",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 109447,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 13385,
+        "L": 1003,
+        "M": 1102,
+        "PG": 135,
+        "PI": 3062,
+        "PM": 23,
+        "UL": 754
+      },
+      "source_file": "raw_data/toga_gene_status/Mesocricetus_auratus.loss_summ_data.tsv.gz",
+      "source_sha256": "2ef6cdcbc82541f885c0967c40a00c855b2387fc074a40b495b186038c0ed79d"
+    },
+    {
+      "species": "Mesoplodon_bidens",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 94585,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 14315,
+        "L": 1339,
+        "M": 290,
+        "PG": 281,
+        "PI": 2061,
+        "PM": 194,
+        "UL": 984
+      },
+      "source_file": "raw_data/toga_gene_status/Mesoplodon_bidens.loss_summ_data.tsv.gz",
+      "source_sha256": "d55a06031107cbf0dae81c5d2c3988a8163c48338bd252054784156e684fe987"
+    },
+    {
+      "species": "Microgale_talazaci",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 113892,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 12044,
+        "L": 1059,
+        "M": 622,
+        "PG": 935,
+        "PI": 3301,
+        "PM": 756,
+        "UL": 747
+      },
+      "source_file": "raw_data/toga_gene_status/Microgale_talazaci.loss_summ_data.tsv.gz",
+      "source_sha256": "b6786b8fbe6966b00dbe92b318589819c61c78fd0238de9b90b2f4156234fe1c"
+    },
+    {
+      "species": "Micronycteris_hirsuta",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 91051,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 13968,
+        "L": 1091,
+        "M": 675,
+        "PG": 454,
+        "PI": 2113,
+        "PM": 488,
+        "UL": 675
+      },
+      "source_file": "raw_data/toga_gene_status/Micronycteris_hirsuta.loss_summ_data.tsv.gz",
+      "source_sha256": "25e98d4a9eaa1dd2534ebea04ae3ab96996f45875aaa8c43148eca857dfe9cde"
+    },
+    {
+      "species": "Microtus_ochrogaster",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 120146,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 16342,
+        "L": 876,
+        "M": 594,
+        "PG": 93,
+        "PI": 963,
+        "PM": 20,
+        "UL": 576
+      },
+      "source_file": "raw_data/toga_gene_status/Microtus_ochrogaster.loss_summ_data.tsv.gz",
+      "source_sha256": "f61be125e6b325684d3fe1ebfa0cf2c650ce395cc4c26830dd6e040897c72b8f"
+    },
+    {
+      "species": "Miniopterus_schreibersii",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 92440,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 16268,
+        "L": 1033,
+        "M": 193,
+        "PG": 176,
+        "PI": 1087,
+        "PM": 72,
+        "UL": 635
+      },
+      "source_file": "raw_data/toga_gene_status/Miniopterus_schreibersii.loss_summ_data.tsv.gz",
+      "source_sha256": "35fdac8da9cb8bbc5342df7daffabd7bae4415b1c7b5efb6d13307a55c7c9f76"
+    },
+    {
+      "species": "Mirza_coquereli",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 139457,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 15484,
+        "L": 589,
+        "M": 154,
+        "PG": 131,
+        "PI": 2336,
+        "PM": 196,
+        "UL": 574
+      },
+      "source_file": "raw_data/toga_gene_status/Mirza_coquereli.loss_summ_data.tsv.gz",
+      "source_sha256": "aff6e1672b54db4128f3bdfc850eb6a42d893f2f3bb4300494a8a032f14f3c41"
+    },
+    {
+      "species": "Mormoops_blainvillei",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 89003,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 15182,
+        "L": 1132,
+        "M": 394,
+        "PG": 329,
+        "PI": 1502,
+        "PM": 265,
+        "UL": 660
+      },
+      "source_file": "raw_data/toga_gene_status/Mormoops_blainvillei.loss_summ_data.tsv.gz",
+      "source_sha256": "a8a88dd6ccf3a172cde2888e11c6df8713f011ad3db5f61856cc426220bd6ccd"
+    },
+    {
+      "species": "Mungos_mungo",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 107414,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 16604,
+        "L": 809,
+        "M": 277,
+        "PG": 107,
+        "PI": 1008,
+        "PM": 76,
+        "UL": 583
+      },
+      "source_file": "raw_data/toga_gene_status/Mungos_mungo.loss_summ_data.tsv.gz",
+      "source_sha256": "4ac696b7290dd1e308dfceb7259d15d142d5ff053f2f5babb7bae14ee6769a13"
+    },
+    {
+      "species": "Murina_feae",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 104890,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 13624,
+        "L": 997,
+        "M": 506,
+        "PG": 371,
+        "PI": 2911,
+        "PM": 348,
+        "UL": 707
+      },
+      "source_file": "raw_data/toga_gene_status/Murina_feae.loss_summ_data.tsv.gz",
+      "source_sha256": "71a5d2c0d4fa9600e04bc3c4cc621aa31b04afb6e64725f076395aaed803f789"
+    },
+    {
+      "species": "Mus_caroli",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 111064,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 16614,
+        "L": 869,
+        "M": 469,
+        "PG": 95,
+        "PI": 773,
+        "PM": 9,
+        "UL": 635
+      },
+      "source_file": "raw_data/toga_gene_status/Mus_caroli.loss_summ_data.tsv.gz",
+      "source_sha256": "ebe49fe567144aa1a5fd263c734bdd53d56cbe30804557563578bf61d3b2b225"
+    },
+    {
+      "species": "Mus_pahari",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 108587,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 16660,
+        "L": 937,
+        "M": 431,
+        "PG": 116,
+        "PI": 704,
+        "PM": 17,
+        "UL": 599
+      },
+      "source_file": "raw_data/toga_gene_status/Mus_pahari.loss_summ_data.tsv.gz",
+      "source_sha256": "fba31a10f43f53ea8d629ddcdd702ad2a93e03efd6d69e648a405d25e0b7b702"
+    },
+    {
+      "species": "Mus_spretus",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 107824,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 16729,
+        "L": 892,
+        "M": 550,
+        "PG": 96,
+        "PI": 567,
+        "PM": 12,
+        "UL": 618
+      },
+      "source_file": "raw_data/toga_gene_status/Mus_spretus.loss_summ_data.tsv.gz",
+      "source_sha256": "82cf380a318c1a738fc3adb251d9686ecb9045f87d16254b702c6050c342bd10"
+    },
+    {
+      "species": "Muscardinus_avellanarius",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 105611,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 16073,
+        "L": 753,
+        "M": 196,
+        "PG": 238,
+        "PI": 1479,
+        "PM": 155,
+        "UL": 570
+      },
+      "source_file": "raw_data/toga_gene_status/Muscardinus_avellanarius.loss_summ_data.tsv.gz",
+      "source_sha256": "93ad7a748de8d6a13536055d16dd2a8a01d475bb7f48935506167456fa146a9d"
+    },
+    {
+      "species": "Myocastor_coypus",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 93594,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 14354,
+        "L": 928,
+        "M": 370,
+        "PG": 431,
+        "PI": 2287,
+        "PM": 343,
+        "UL": 751
+      },
+      "source_file": "raw_data/toga_gene_status/Myocastor_coypus.loss_summ_data.tsv.gz",
+      "source_sha256": "3204d65a6f74ede42466d89d510aed1c532acace4d872e88d382b26e7a291a04"
+    },
+    {
+      "species": "Myotis_brandtii",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 118341,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 12541,
+        "L": 997,
+        "M": 1589,
+        "PG": 94,
+        "PI": 3081,
+        "PM": 19,
+        "UL": 1143
+      },
+      "source_file": "raw_data/toga_gene_status/Myotis_brandtii.loss_summ_data.tsv.gz",
+      "source_sha256": "f89787de6d6c009a8e11a58e956ff2addba0373da76863e7a8bf5acd5d5b988c"
+    },
+    {
+      "species": "Myotis_davidii",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 123035,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 11237,
+        "L": 1144,
+        "M": 1629,
+        "PG": 118,
+        "PI": 3698,
+        "PM": 30,
+        "UL": 1608
+      },
+      "source_file": "raw_data/toga_gene_status/Myotis_davidii.loss_summ_data.tsv.gz",
+      "source_sha256": "56ede6d806a0ac0d1c7087726534bcd14c376d954521918797792df71d76cd3d"
+    },
+    {
+      "species": "Myotis_lucifugus",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 140700,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 12874,
+        "L": 1104,
+        "M": 1072,
+        "PG": 284,
+        "PI": 1965,
+        "PM": 184,
+        "UL": 1981
+      },
+      "source_file": "raw_data/toga_gene_status/Myotis_lucifugus.loss_summ_data.tsv.gz",
+      "source_sha256": "487bfb1620840b6d7c9590b2059a0c3a383dcf23b1a387ef7de3ed2c2ae28b94"
+    },
+    {
+      "species": "Myrmecophaga_tridactyla",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 105902,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 14191,
+        "L": 950,
+        "M": 326,
+        "PG": 241,
+        "PI": 2625,
+        "PM": 321,
+        "UL": 810
+      },
+      "source_file": "raw_data/toga_gene_status/Myrmecophaga_tridactyla.loss_summ_data.tsv.gz",
+      "source_sha256": "ea10104368357ccab896cc055c655dc1fe2558de5ffe4dba1b9bc27549617dd3"
+    },
+    {
+      "species": "Nannospalax_galili",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 115746,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 16362,
+        "L": 937,
+        "M": 378,
+        "PG": 114,
+        "PI": 748,
+        "PM": 53,
+        "UL": 872
+      },
+      "source_file": "raw_data/toga_gene_status/Nannospalax_galili.loss_summ_data.tsv.gz",
+      "source_sha256": "ec808ca6aa55cc6bffe76d7d4eddf2957908b60ed3fb7c248accfcca55164e60"
+    },
+    {
+      "species": "Neophocaena_asiaeorientalis",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 107917,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 15194,
+        "L": 1660,
+        "M": 319,
+        "PG": 44,
+        "PI": 925,
+        "PM": 10,
+        "UL": 1312
+      },
+      "source_file": "raw_data/toga_gene_status/Neophocaena_asiaeorientalis.loss_summ_data.tsv.gz",
+      "source_sha256": "aa2c5ee9ff8e2668e59b8519ab2358d336375341f1ce515ce9deec6ac9134768"
+    },
+    {
+      "species": "Noctilio_leporinus",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 97365,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 16283,
+        "L": 1152,
+        "M": 262,
+        "PG": 258,
+        "PI": 734,
+        "PM": 136,
+        "UL": 639
+      },
+      "source_file": "raw_data/toga_gene_status/Noctilio_leporinus.loss_summ_data.tsv.gz",
+      "source_sha256": "e6c38378c97857f7c0385a0f366ddbba480663d231c6147f7cfedf016975ce59"
+    },
+    {
+      "species": "Nycticebus_coucang",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 148340,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 14337,
+        "L": 639,
+        "M": 266,
+        "PG": 192,
+        "PI": 3047,
+        "PM": 239,
+        "UL": 744
+      },
+      "source_file": "raw_data/toga_gene_status/Nycticebus_coucang.loss_summ_data.tsv.gz",
+      "source_sha256": "77f3138da3f656493638c1a0af4d198d3ec2d71ac204f08be757c2780caa68a0"
+    },
+    {
+      "species": "Ochotona_princeps",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 102337,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 14231,
+        "L": 1155,
+        "M": 667,
+        "PG": 161,
+        "PI": 2533,
+        "PM": 15,
+        "UL": 702
+      },
+      "source_file": "raw_data/toga_gene_status/Ochotona_princeps.loss_summ_data.tsv.gz",
+      "source_sha256": "fcedb13c8e565fed2b02ef3e37218b7cb0db66f08f068ba1aa450d76a780525e"
+    },
+    {
+      "species": "Octodon_degus",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 118568,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 15129,
+        "L": 970,
+        "M": 629,
+        "PG": 84,
+        "PI": 1906,
+        "PM": 15,
+        "UL": 731
+      },
+      "source_file": "raw_data/toga_gene_status/Octodon_degus.loss_summ_data.tsv.gz",
+      "source_sha256": "00596a976c4d22839744cf75b8ef8fca16e4e3995112a49db723edf98b6f892e"
+    },
+    {
+      "species": "Odobenus_rosmarus",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 113920,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 17363,
+        "L": 750,
+        "M": 142,
+        "PG": 27,
+        "PI": 410,
+        "PM": 17,
+        "UL": 755
+      },
+      "source_file": "raw_data/toga_gene_status/Odobenus_rosmarus.loss_summ_data.tsv.gz",
+      "source_sha256": "6ecb15646a63064e84018f3de5c84103554c6c13242705919240e45e54dddc10"
+    },
+    {
+      "species": "Odocoileus_virginianus",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 120335,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 16580,
+        "L": 723,
+        "M": 76,
+        "PG": 38,
+        "PI": 627,
+        "PM": 26,
+        "UL": 1394
+      },
+      "source_file": "raw_data/toga_gene_status/Odocoileus_virginianus.loss_summ_data.tsv.gz",
+      "source_sha256": "be9eb60b4a8b924fa78cd683eec63d0e24712389c1abe9e4c3faf56f463f3a0c"
+    },
+    {
+      "species": "Ondatra_zibethicus",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 103630,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 16168,
+        "L": 913,
+        "M": 283,
+        "PG": 357,
+        "PI": 1002,
+        "PM": 114,
+        "UL": 627
+      },
+      "source_file": "raw_data/toga_gene_status/Ondatra_zibethicus.loss_summ_data.tsv.gz",
+      "source_sha256": "383b9e7e105712442194163b4adc534ba34ddb33522ad43cf8a34796232cd403"
+    },
+    {
+      "species": "Otolemur_garnettii",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 146670,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 16179,
+        "L": 598,
+        "M": 305,
+        "PG": 20,
+        "PI": 1731,
+        "PM": 3,
+        "UL": 628
+      },
+      "source_file": "raw_data/toga_gene_status/Otolemur_garnettii.loss_summ_data.tsv.gz",
+      "source_sha256": "1c17e8f0d14aa3dbee1fb42bebd45c3bcffd40bd28fbc4936d0be21b5a8b92b0"
+    },
+    {
+      "species": "Ovis_canadensis",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 106421,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 15976,
+        "L": 730,
+        "M": 256,
+        "PG": 185,
+        "PI": 1477,
+        "PM": 168,
+        "UL": 672
+      },
+      "source_file": "raw_data/toga_gene_status/Ovis_canadensis.loss_summ_data.tsv.gz",
+      "source_sha256": "83cb9f28475a75e0d1838812595996d3967d44611e4b8d119a9bfe5fda9fba92"
+    },
+    {
+      "species": "Panthera_onca",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 98109,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 16571,
+        "L": 745,
+        "M": 145,
+        "PG": 116,
+        "PI": 1199,
+        "PM": 97,
+        "UL": 591
+      },
+      "source_file": "raw_data/toga_gene_status/Panthera_onca.loss_summ_data.tsv.gz",
+      "source_sha256": "4f299f2b30678a9264a121eea60d898ad5a735442d6dc59639f0482c8997ccc3"
+    },
+    {
+      "species": "Panthera_pardus",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 142599,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 17326,
+        "L": 676,
+        "M": 170,
+        "PG": 16,
+        "PI": 549,
+        "PM": 5,
+        "UL": 722
+      },
+      "source_file": "raw_data/toga_gene_status/Panthera_pardus.loss_summ_data.tsv.gz",
+      "source_sha256": "63ca617ab16f01317c283b2a0e590c49a964a32659b8989acde8b628508029b4"
+    },
+    {
+      "species": "Panthera_tigris",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 122131,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 11785,
+        "L": 950,
+        "M": 1683,
+        "PG": 19,
+        "PI": 3465,
+        "PM": 7,
+        "UL": 1555
+      },
+      "source_file": "raw_data/toga_gene_status/Panthera_tigris.loss_summ_data.tsv.gz",
+      "source_sha256": "dff7c4aa3716a7cf050b0672f26a665def88cc6dcaaf8543389f2e0e674131e9"
+    },
+    {
+      "species": "Pantholops_hodgsonii",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 121641,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 13373,
+        "L": 786,
+        "M": 1223,
+        "PG": 32,
+        "PI": 2708,
+        "PM": 6,
+        "UL": 1336
+      },
+      "source_file": "raw_data/toga_gene_status/Pantholops_hodgsonii.loss_summ_data.tsv.gz",
+      "source_sha256": "5f1541c87e3ea1c3136ff9cdba1bc5fe40373e72b75c93ab3305e808aa846039"
+    },
+    {
+      "species": "Paradoxurus_hermaphroditus",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 106032,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 14788,
+        "L": 746,
+        "M": 251,
+        "PG": 167,
+        "PI": 2619,
+        "PM": 253,
+        "UL": 640
+      },
+      "source_file": "raw_data/toga_gene_status/Paradoxurus_hermaphroditus.loss_summ_data.tsv.gz",
+      "source_sha256": "c624eb86b61e2fe9d423609378a8b06a89dbdb1f91a990277b32c179471e4010"
+    },
+    {
+      "species": "Perognathus_longimembris",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 107379,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 13306,
+        "L": 1081,
+        "M": 420,
+        "PG": 599,
+        "PI": 2769,
+        "PM": 576,
+        "UL": 713
+      },
+      "source_file": "raw_data/toga_gene_status/Perognathus_longimembris.loss_summ_data.tsv.gz",
+      "source_sha256": "4508dc1f7bcad794fa932bc762fe781774c98dcc14c8a7219aa16c08644d39cd"
+    },
+    {
+      "species": "Petromus_typicus",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 90817,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 14039,
+        "L": 932,
+        "M": 317,
+        "PG": 335,
+        "PI": 2804,
+        "PM": 287,
+        "UL": 750
+      },
+      "source_file": "raw_data/toga_gene_status/Petromus_typicus.loss_summ_data.tsv.gz",
+      "source_sha256": "c49159739e7be0b5cfb58b9876677abee740759c7e6ec4ddfeb6baa12fc54279"
+    },
+    {
+      "species": "Phocoena_phocoena",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 91369,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 15840,
+        "L": 1471,
+        "M": 160,
+        "PG": 186,
+        "PI": 829,
+        "PM": 87,
+        "UL": 891
+      },
+      "source_file": "raw_data/toga_gene_status/Phocoena_phocoena.loss_summ_data.tsv.gz",
+      "source_sha256": "b0e15fb7e87140b168a996a5612222877abb85266ceeafb834f8d732e0ef9dd6"
+    },
+    {
+      "species": "Pipistrellus_pipistrellus",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 128000,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 12469,
+        "L": 1126,
+        "M": 464,
+        "PG": 507,
+        "PI": 3431,
+        "PM": 620,
+        "UL": 847
+      },
+      "source_file": "raw_data/toga_gene_status/Pipistrellus_pipistrellus.loss_summ_data.tsv.gz",
+      "source_sha256": "3d1d47b18872e8a0c77fbf10ba28c75e10f02cd3e28f216bb019b6e651bf99bc"
+    },
+    {
+      "species": "Pithecia_pithecia",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 180783,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 16095,
+        "L": 422,
+        "M": 81,
+        "PG": 36,
+        "PI": 2051,
+        "PM": 123,
+        "UL": 656
+      },
+      "source_file": "raw_data/toga_gene_status/Pithecia_pithecia.loss_summ_data.tsv.gz",
+      "source_sha256": "51b434f42461aed48e424141909611a0746535f072c32c358b4486d4d859be9f"
+    },
+    {
+      "species": "Platanista_gangetica",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 92050,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 13248,
+        "L": 1276,
+        "M": 496,
+        "PG": 370,
+        "PI": 2746,
+        "PM": 290,
+        "UL": 1038
+      },
+      "source_file": "raw_data/toga_gene_status/Platanista_gangetica.loss_summ_data.tsv.gz",
+      "source_sha256": "77c366854b23810022431cc11cd4f6ad40de2c58f7316099d72decfcb00f7c13"
+    },
+    {
+      "species": "Propithecus_coquereli",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 146195,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 14894,
+        "L": 579,
+        "M": 295,
+        "PG": 8,
+        "PI": 2721,
+        "PM": 7,
+        "UL": 960
+      },
+      "source_file": "raw_data/toga_gene_status/Propithecus_coquereli.loss_summ_data.tsv.gz",
+      "source_sha256": "3071f6f67415ebbcd3d9e007df076a7bd9d0825397026cb3fcfe616a90a06cea"
+    },
+    {
+      "species": "Pteronotus_parnellii",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 88435,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 7491,
+        "L": 1101,
+        "M": 2588,
+        "PG": 835,
+        "PI": 4914,
+        "PM": 956,
+        "UL": 1579
+      },
+      "source_file": "raw_data/toga_gene_status/Pteronotus_parnellii.loss_summ_data.tsv.gz",
+      "source_sha256": "b9f1338dc1c3b15cde6d90309433b645732a857bc8bcbc95f5b4047ca635dee1"
+    },
+    {
+      "species": "Pteronura_brasiliensis",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 99781,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 17104,
+        "L": 730,
+        "M": 115,
+        "PG": 95,
+        "PI": 705,
+        "PM": 52,
+        "UL": 663
+      },
+      "source_file": "raw_data/toga_gene_status/Pteronura_brasiliensis.loss_summ_data.tsv.gz",
+      "source_sha256": "bfc27d8c7195d88852f4c6902bf8549dbe70771a35c5122f9b2f26841ea3139e"
+    },
+    {
+      "species": "Pteropus_alecto",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 116460,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 14367,
+        "L": 1025,
+        "M": 773,
+        "PG": 31,
+        "PI": 2208,
+        "PM": 32,
+        "UL": 1028
+      },
+      "source_file": "raw_data/toga_gene_status/Pteropus_alecto.loss_summ_data.tsv.gz",
+      "source_sha256": "c7377941e1465b129631819eb2625522bd16a69d6dad930f72637ccfbaaefa55"
+    },
+    {
+      "species": "Pygathrix_nemaeus",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 193272,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 15958,
+        "L": 401,
+        "M": 91,
+        "PG": 32,
+        "PI": 2205,
+        "PM": 163,
+        "UL": 614
+      },
+      "source_file": "raw_data/toga_gene_status/Pygathrix_nemaeus.loss_summ_data.tsv.gz",
+      "source_sha256": "fab69ed6b29bb527b4715a713b6b440f91d83a94af45683cf067e93f0f026d66"
+    },
+    {
+      "species": "Rangifer_tarandus",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 112480,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 16480,
+        "L": 751,
+        "M": 210,
+        "PG": 114,
+        "PI": 1168,
+        "PM": 96,
+        "UL": 645
+      },
+      "source_file": "raw_data/toga_gene_status/Rangifer_tarandus.loss_summ_data.tsv.gz",
+      "source_sha256": "79c65cb5ac68101f75e76c972f4f2254d060de76915e36669658fc4aa3c2cad4"
+    },
+    {
+      "species": "Rattus_norvegicus",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 71930,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 16387,
+        "L": 941,
+        "M": 275,
+        "PG": 93,
+        "PI": 366,
+        "PM": 40,
+        "UL": 1362
+      },
+      "source_file": "raw_data/toga_gene_status/Rattus_norvegicus.loss_summ_data.tsv.gz",
+      "source_sha256": "7a0be0869d9dff986491bbb5c33bf44f4918d9e1a39a3f2c6c2448d19e22b742"
+    },
+    {
+      "species": "Rhinolophus_sinicus",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 99782,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 16560,
+        "L": 912,
+        "M": 368,
+        "PG": 75,
+        "PI": 723,
+        "PM": 14,
+        "UL": 812
+      },
+      "source_file": "raw_data/toga_gene_status/Rhinolophus_sinicus.loss_summ_data.tsv.gz",
+      "source_sha256": "2836865cbb4f5b06ea79d0199c3125c8840f6c0923f3a12885838b933c26b957"
+    },
+    {
+      "species": "Rhinopithecus_bieti",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 206182,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 14601,
+        "L": 603,
+        "M": 197,
+        "PG": 12,
+        "PI": 1386,
+        "PM": 27,
+        "UL": 2638
+      },
+      "source_file": "raw_data/toga_gene_status/Rhinopithecus_bieti.loss_summ_data.tsv.gz",
+      "source_sha256": "d5b18ff036e84b75a9dea63e3856e88e890db69b178f509eb68e5de3683de3ee"
+    },
+    {
+      "species": "Saguinus_imperator",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 198973,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 16000,
+        "L": 513,
+        "M": 108,
+        "PG": 42,
+        "PI": 1900,
+        "PM": 137,
+        "UL": 764
+      },
+      "source_file": "raw_data/toga_gene_status/Saguinus_imperator.loss_summ_data.tsv.gz",
+      "source_sha256": "d8ceeb8980c84ee57a84e4a95924f7b25d0d5a4c68535effe9ceff7b00ae9890"
+    },
+    {
+      "species": "Saiga_tatarica",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 96208,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 7035,
+        "L": 1029,
+        "M": 1408,
+        "PG": 879,
+        "PI": 6231,
+        "PM": 1855,
+        "UL": 1027
+      },
+      "source_file": "raw_data/toga_gene_status/Saiga_tatarica.loss_summ_data.tsv.gz",
+      "source_sha256": "2a072b3fa6574f80be2ada32ad02c540849dd02b30e362893dcafba8de3f2027"
+    },
+    {
+      "species": "Saimiri_boliviensis",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 176770,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 15340,
+        "L": 586,
+        "M": 572,
+        "PG": 9,
+        "PI": 2339,
+        "PM": 3,
+        "UL": 615
+      },
+      "source_file": "raw_data/toga_gene_status/Saimiri_boliviensis.loss_summ_data.tsv.gz",
+      "source_sha256": "e2c35a6e8b38e940f2c6d6475c071a36d923b84a6028db7652639a4fea68670e"
+    },
+    {
+      "species": "Scalopus_aquaticus",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 109144,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 16182,
+        "L": 992,
+        "M": 215,
+        "PG": 423,
+        "PI": 890,
+        "PM": 114,
+        "UL": 648
+      },
+      "source_file": "raw_data/toga_gene_status/Scalopus_aquaticus.loss_summ_data.tsv.gz",
+      "source_sha256": "fe0fc1c33d9e4cade882434b38454ca44307ef57d5840c9c5c96e9a51ab7d44f"
+    },
+    {
+      "species": "Semnopithecus_entellus",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 185603,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 13694,
+        "L": 558,
+        "M": 191,
+        "PG": 68,
+        "PI": 3880,
+        "PM": 303,
+        "UL": 770
+      },
+      "source_file": "raw_data/toga_gene_status/Semnopithecus_entellus.loss_summ_data.tsv.gz",
+      "source_sha256": "5f92993b28c74044339e30fcdab4825215a4e718468853853075f10569321c76"
+    },
+    {
+      "species": "Sigmodon_hispidus",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 106686,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 16443,
+        "L": 924,
+        "M": 298,
+        "PG": 340,
+        "PI": 791,
+        "PM": 110,
+        "UL": 558
+      },
+      "source_file": "raw_data/toga_gene_status/Sigmodon_hispidus.loss_summ_data.tsv.gz",
+      "source_sha256": "3b4c45d967c903ddd21d9146e1e936298c924495c83354e1c368472c5ff07579"
+    },
+    {
+      "species": "Solenodon_paradoxus",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 106307,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 16520,
+        "L": 987,
+        "M": 188,
+        "PG": 217,
+        "PI": 702,
+        "PM": 78,
+        "UL": 772
+      },
+      "source_file": "raw_data/toga_gene_status/Solenodon_paradoxus.loss_summ_data.tsv.gz",
+      "source_sha256": "1aea3e304ae13fce23ce3a5ac4200683be8236320afc7f81a0dbfb67f4f549e4"
+    },
+    {
+      "species": "Sorex_araneus",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 121622,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 13110,
+        "L": 1215,
+        "M": 1256,
+        "PG": 499,
+        "PI": 2734,
+        "PM": 23,
+        "UL": 627
+      },
+      "source_file": "raw_data/toga_gene_status/Sorex_araneus.loss_summ_data.tsv.gz",
+      "source_sha256": "29f85176caf7402d518ab592cc7ec717ff1b914af5f3b76c4c1ec20e7960c23a"
+    },
+    {
+      "species": "Spermophilus_dauricus",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 163158,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 12543,
+        "L": 969,
+        "M": 782,
+        "PG": 32,
+        "PI": 2227,
+        "PM": 48,
+        "UL": 2863
+      },
+      "source_file": "raw_data/toga_gene_status/Spermophilus_dauricus.loss_summ_data.tsv.gz",
+      "source_sha256": "2436b2cff601532287194865c006ef64aa60389e70340ae8f70837da45ea592a"
+    },
+    {
+      "species": "Spilogale_gracilis",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 93327,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 16098,
+        "L": 782,
+        "M": 200,
+        "PG": 143,
+        "PI": 1526,
+        "PM": 133,
+        "UL": 582
+      },
+      "source_file": "raw_data/toga_gene_status/Spilogale_gracilis.loss_summ_data.tsv.gz",
+      "source_sha256": "17bfaa977a1fb40eaab045d993963c07380a89f69e53ddb76a9b40b74d216628"
+    },
+    {
+      "species": "Suricata_suricatta",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 103949,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 16402,
+        "L": 915,
+        "M": 165,
+        "PG": 117,
+        "PI": 1131,
+        "PM": 91,
+        "UL": 643
+      },
+      "source_file": "raw_data/toga_gene_status/Suricata_suricatta.loss_summ_data.tsv.gz",
+      "source_sha256": "c96ae26c7e9de1038751ff7eea0ddca359bdfdb08a028edd4224fa49ba868b3a"
+    },
+    {
+      "species": "Tadarida_brasiliensis",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 122482,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 12939,
+        "L": 1010,
+        "M": 344,
+        "PG": 299,
+        "PI": 3624,
+        "PM": 459,
+        "UL": 789
+      },
+      "source_file": "raw_data/toga_gene_status/Tadarida_brasiliensis.loss_summ_data.tsv.gz",
+      "source_sha256": "29f1d9da76aaa62a2c36d5beab910087671a1788c02c5f0aca0e6545b9e9114d"
+    },
+    {
+      "species": "Tamandua_tetradactyla",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 98021,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 12765,
+        "L": 912,
+        "M": 672,
+        "PG": 319,
+        "PI": 3524,
+        "PM": 417,
+        "UL": 855
+      },
+      "source_file": "raw_data/toga_gene_status/Tamandua_tetradactyla.loss_summ_data.tsv.gz",
+      "source_sha256": "48b61e926e7da5d7f742e3429c090fd77f5d49f13ca56545e77c43b235c988f9"
+    },
+    {
+      "species": "Tapirus_indicus",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 128417,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 17524,
+        "L": 504,
+        "M": 76,
+        "PG": 57,
+        "PI": 684,
+        "PM": 43,
+        "UL": 576
+      },
+      "source_file": "raw_data/toga_gene_status/Tapirus_indicus.loss_summ_data.tsv.gz",
+      "source_sha256": "2582342fd85e355a1a610ae201c5e80a23a7ae39f23da2d8c21893d77ab30340"
+    },
+    {
+      "species": "Tapirus_terrestris",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 130570,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 16747,
+        "L": 550,
+        "M": 109,
+        "PG": 63,
+        "PI": 1288,
+        "PM": 92,
+        "UL": 615
+      },
+      "source_file": "raw_data/toga_gene_status/Tapirus_terrestris.loss_summ_data.tsv.gz",
+      "source_sha256": "56544ac8abd1a62ffd3da2579e0895e907bd00d215fbf3340ae62f62bd6fa742"
+    },
+    {
+      "species": "Thryonomys_swinderianus",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 89954,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 13586,
+        "L": 1065,
+        "M": 373,
+        "PG": 403,
+        "PI": 2818,
+        "PM": 360,
+        "UL": 859
+      },
+      "source_file": "raw_data/toga_gene_status/Thryonomys_swinderianus.loss_summ_data.tsv.gz",
+      "source_sha256": "cc4662d59f44b22253752ae79177d9726cfd4444994f4fdaf88bb6ed514207ba"
+    },
+    {
+      "species": "Tolypeutes_matacus",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 82693,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 3983,
+        "L": 1029,
+        "M": 6474,
+        "PG": 2371,
+        "PI": 2789,
+        "PM": 2197,
+        "UL": 621
+      },
+      "source_file": "raw_data/toga_gene_status/Tolypeutes_matacus.loss_summ_data.tsv.gz",
+      "source_sha256": "121bf1219cda5fc5f8db40dd96df7998673b8aab4b790e514bb6dcfe498e884a"
+    },
+    {
+      "species": "Tonatia_saurophila",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 104125,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 16306,
+        "L": 1004,
+        "M": 178,
+        "PG": 193,
+        "PI": 1031,
+        "PM": 99,
+        "UL": 653
+      },
+      "source_file": "raw_data/toga_gene_status/Tonatia_saurophila.loss_summ_data.tsv.gz",
+      "source_sha256": "5a47833e26aa6cde6934c3399bc4c93c4058edb0f1f67c0a49027accd9eb6655"
+    },
+    {
+      "species": "Trichechus_manatus",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 122382,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 15855,
+        "L": 815,
+        "M": 511,
+        "PG": 28,
+        "PI": 1436,
+        "PM": 11,
+        "UL": 808
+      },
+      "source_file": "raw_data/toga_gene_status/Trichechus_manatus.loss_summ_data.tsv.gz",
+      "source_sha256": "2148809bdfb1421d6eb8af81a6f40d750924e7614fd66b7333a7333aa879c232"
+    },
+    {
+      "species": "Tupaia_chinensis",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 96569,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 2452,
+        "L": 1412,
+        "M": 4379,
+        "PG": 659,
+        "PI": 4778,
+        "PM": 748,
+        "UL": 5036
+      },
+      "source_file": "raw_data/toga_gene_status/Tupaia_chinensis.loss_summ_data.tsv.gz",
+      "source_sha256": "214d4cf04a1b22eeecc55131148758eabea6dd425d078cf0456dffc23093bd31"
+    },
+    {
+      "species": "Tursiops_truncatus",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 101495,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 11519,
+        "L": 1712,
+        "M": 2422,
+        "PG": 93,
+        "PI": 2675,
+        "PM": 62,
+        "UL": 981
+      },
+      "source_file": "raw_data/toga_gene_status/Tursiops_truncatus.loss_summ_data.tsv.gz",
+      "source_sha256": "3a03588190547168cacc66fef82e57a8cd93bacde7eb9291d923840d1c85ab73"
+    },
+    {
+      "species": "Uropsilus_gracilis",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 108689,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 12787,
+        "L": 1141,
+        "M": 888,
+        "PG": 1256,
+        "PI": 1991,
+        "PM": 733,
+        "UL": 668
+      },
+      "source_file": "raw_data/toga_gene_status/Uropsilus_gracilis.loss_summ_data.tsv.gz",
+      "source_sha256": "a49dbd53746c8e1762e0f17362893e065211f44fbb0db51e34f835664f8bb7f0"
+    },
+    {
+      "species": "Ursus_maritimus",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 127144,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 11878,
+        "L": 832,
+        "M": 1456,
+        "PG": 18,
+        "PI": 3486,
+        "PM": 4,
+        "UL": 1790
+      },
+      "source_file": "raw_data/toga_gene_status/Ursus_maritimus.loss_summ_data.tsv.gz",
+      "source_sha256": "d742f9d00a239570de17ac347b01467b7be7b537d531976a9c1f28030fb44dad"
+    },
+    {
+      "species": "Vicugna_pacos",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 114164,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 16106,
+        "L": 743,
+        "M": 452,
+        "PG": 52,
+        "PI": 1280,
+        "PM": 26,
+        "UL": 805
+      },
+      "source_file": "raw_data/toga_gene_status/Vicugna_pacos.loss_summ_data.tsv.gz",
+      "source_sha256": "8d85ecad5c53365bbb331b2d3478530ea5eebafe2cfb3701a8de5fb048b91648"
+    },
+    {
+      "species": "Vulpes_lagopus",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 95584,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 16166,
+        "L": 793,
+        "M": 210,
+        "PG": 167,
+        "PI": 1362,
+        "PM": 118,
+        "UL": 648
+      },
+      "source_file": "raw_data/toga_gene_status/Vulpes_lagopus.loss_summ_data.tsv.gz",
+      "source_sha256": "a1e03fda90ed6d24967dadf01e2afc2ff5e21cc0f80c30f1db4f316b184fac61"
+    },
+    {
+      "species": "Xerus_inauris",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 115871,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 16086,
+        "L": 723,
+        "M": 227,
+        "PG": 127,
+        "PI": 1531,
+        "PM": 133,
+        "UL": 637
+      },
+      "source_file": "raw_data/toga_gene_status/Xerus_inauris.loss_summ_data.tsv.gz",
+      "source_sha256": "f51f75c1f2d6d5ac5fb15f0596af59aa0c7800db29e74b23b02231a9ff6c9994"
+    },
+    {
+      "species": "Zapus_hudsonius",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 100587,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 13240,
+        "L": 1014,
+        "M": 463,
+        "PG": 563,
+        "PI": 2916,
+        "PM": 505,
+        "UL": 763
+      },
+      "source_file": "raw_data/toga_gene_status/Zapus_hudsonius.loss_summ_data.tsv.gz",
+      "source_sha256": "59fdfbd74cc18257d041c27412d748b56041e9313832228b2b3a65d14c21c320"
+    },
+    {
+      "species": "Ziphius_cavirostris",
+      "gene_rows": 19464,
+      "entity_rows": {
+        "PROJECTION": 93019,
+        "TRANSCRIPT": 39664,
+        "GENE": 19464
+      },
+      "status_counts": {
+        "I": 9336,
+        "L": 1130,
+        "M": 749,
+        "PG": 631,
+        "PI": 5338,
+        "PM": 1172,
+        "UL": 1108
+      },
+      "source_file": "raw_data/toga_gene_status/Ziphius_cavirostris.loss_summ_data.tsv.gz",
+      "source_sha256": "9531beb219b6822c8bd6a033d3494434e5d9dcd396a60336450ef1a0d6f81a41"
+    }
+  ],
+  "scientific_status": "validated pairwise human-reference TOGA gene classifications; ancestry correction not yet applied"
+}
