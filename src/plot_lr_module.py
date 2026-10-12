@@ -56,8 +56,8 @@ CLADE_COLORS = dict(zip(CLADES, plt.cm.tab20(np.linspace(0, 1, len(CLADES)))))
 
 STATUS_ORDER = ["I", "PI", "PG", "PM", "M", "UL", "L"]
 STATUS_COLORS = ["#4c9f70", "#a8d5ba", "#f2e394", "#f4b183", "#9e9e9e", "#8e7cc3", "#c0392b"]
-STATUS_LABELS = {"I": "Intact", "PI": "Partially intact", "PG": "Probably gene", "PM": "Probably missing",
-                 "M": "Missing", "UL": "Uncertain loss", "L": "Lost"}
+STATUS_LABELS = {"I": "Intact", "PI": "Partially intact", "PG": "Paralogous projection",
+                 "PM": "Partially missing", "M": "Missing", "UL": "Uncertain loss", "L": "Lost"}
 
 
 def load():
