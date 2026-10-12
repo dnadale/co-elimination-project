@@ -1,44 +1,13 @@
-# Large comparative-genomics data
-*.2bit
-*.fa
-*.fa.gz
-*.fasta
-*.fasta.gz
-*.hal
-*.hal.gz
-*.chain
-*.chain.gz
-*.bed.gz
-*.gtf.gz
-*.tsv.gz
-*.tar.gz
-
-# Large/raw data — keep provenance manifests, not the data itself
 data/
 raw_data/
 genomes/
 alignments/
 orthologs/
 logs/
-
-# Large intermediates — keep final results
 analysis/*.tsv
 analysis/*.csv
-
-# Local environments and caches
-.venv/
-venv/
 __pycache__/
+*.pyc
 .ipynb_checkpoints/
-.nextflow/
-.nextflow.log*
-
-# Logs and temporary files
 *.log
-*.tmp
-scratch/
-tmp/
-
-# Secrets and machine-local settings
-.env
-.vscode/settings.json
+.DS_Store
