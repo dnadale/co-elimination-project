@@ -1,0 +1,20 @@
+gene_a	gene_b	both_L	only_a_L	only_b_L	uncertain_UL_in_either	n_clades_with_both_L	n_clades_majority_lost	top_clade	top_clade_share	clades_majority_lost	string_score	verdict
+KRABD2	LRRC70	58	12	12	9	6	4	Rodentia	0.53	Rodentia;Chiroptera;Eulipotyphla;Lagomorpha	0.0	multi-clade, no known link
+TIGD7	ZNF404	54	11	12	12	5	5	Rodentia	0.61	Rodentia;Chiroptera;Eulipotyphla;Afrotheria;Lagomorpha	0.0	multi-clade, no known link
+IGSF22	SPEGNB	49	19	0	34	7	3	Rodentia	0.73	Rodentia;Eulipotyphla;Lagomorpha	0.0	multi-clade, no known link
+MAGEF1	LRRC70	64	19	6	14	8	6	Rodentia	0.52	Rodentia;Chiroptera;Eulipotyphla;Lagomorpha;Pholidota;Scandentia	0.0	multi-clade, no known link
+ZNF404	LRRC70	55	11	15	8	6	5	Rodentia	0.56	Rodentia;Chiroptera;Eulipotyphla;Lagomorpha;Scandentia	0.0	multi-clade, no known link
+ZNF514	LRRC70	50	10	20	12	6	4	Rodentia	0.52	Rodentia;Chiroptera;Lagomorpha;Pholidota	0.0	multi-clade, no known link
+		36	2	5	0	9	4	Rodentia	0.53	Afrotheria;Eulipotyphla;Lagomorpha;Scandentia		multi-clade, no known link
+MCTS2	CIROZ	82	7	9	18	10	8	Chiroptera	0.27	Chiroptera;Carnivora;Ruminantia/other Artiodactyla;Cetacea;Perissodactyla;Eulipotyphla;Afrotheria;Pholidota	0.0	multi-clade, no known link
+MCTS2	FPR1	58	31	4	9	7	7	Chiroptera	0.29	Chiroptera;Carnivora;Ruminantia/other Artiodactyla;Cetacea;Perissodactyla;Eulipotyphla;Pholidota	0.0	multi-clade, no known link
+ZNF404	KRABD2	51	15	19	9	5	5	Rodentia	0.59	Rodentia;Chiroptera;Eulipotyphla;Afrotheria;Lagomorpha	0.0	multi-clade, no known link
+FAM200A	FAM200B	61	28	13	20	9	4	Rodentia	0.52	Rodentia;Chiroptera;Xenarthra;Lagomorpha	0.525	functional link (STRING)
+TIGD7	LRRC70	53	12	17	12	5	4	Rodentia	0.62	Rodentia;Chiroptera;Eulipotyphla;Lagomorpha	0.0	multi-clade, no known link
+ZNF514	KRABD2	47	13	23	13	5	3	Rodentia	0.57	Rodentia;Chiroptera;Lagomorpha	0.0	multi-clade, no known link
+ZNF404	ZNF677	46	20	7	8	6	4	Rodentia	0.61	Rodentia;Chiroptera;Lagomorpha;Scandentia	0.0	multi-clade, no known link
+TYMP	ACY3	39	12	6	16	5	4	Carnivora	0.36	Carnivora;Cetacea;Ruminantia/other Artiodactyla;Pholidota	0.0	multi-clade, no known link
+CALML6	IGSF22	50	4	18	36	8	5	Rodentia	0.64	Rodentia;Ruminantia/other Artiodactyla;Eulipotyphla;Lagomorpha;Pholidota	0.0	multi-clade, no known link
+CETP	MCTS2	82	22	7	9	10	8	Chiroptera	0.28	Chiroptera;Carnivora;Ruminantia/other Artiodactyla;Cetacea;Perissodactyla;Xenarthra;Eulipotyphla;Pholidota	0.0	multi-clade, no known link
+MAGEF1	KRABD2	58	25	12	15	6	4	Rodentia	0.55	Rodentia;Chiroptera;Eulipotyphla;Lagomorpha	0.0	multi-clade, no known link
+LRRC70	ZNF677	45	25	8	8	7	4	Rodentia	0.58	Rodentia;Chiroptera;Lagomorpha;Scandentia	0.0	multi-clade, no known link
