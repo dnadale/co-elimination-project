@@ -8,7 +8,7 @@ The official Zoonomia and TOGA metadata have now been inventoried. This confirms
 
 ## Priority 1: Core project concept
 
-### Szenker-Ravi et al. (2022)
+### Szenker-Ravi et al. (2021)
 **Discovery of a genetic module essential for assigning left-right asymmetry in humans and ancestral vertebrates**
 
 Journal: Nature Genetics
@@ -24,7 +24,7 @@ Questions to answer:
 ### Szenker-Ravi et al. (2025)
 **CIROZ is dispensable in ancestral vertebrates but essential for left-right patterning in humans**
 
-Journal: American Journal of Human Genetics
+Journal: AJHG
 
 Why it matters: This paper shows how a computationally discovered candidate can be followed up with clinical and experimental validation.
 
@@ -35,7 +35,7 @@ Questions to answer:
 
 ## Priority 2: Zoonomia and comparative genomics
 
-### Zoonomia Consortium (2023)
+### Zoonomia Consortium (2020)
 **A comparative genomics multitool for scientific discovery and conservation**
 
 Journal: Nature
@@ -47,9 +47,6 @@ Questions to answer:
 - What species tree and annotations are provided?
 - Which processed files can be used instead of regenerated?
 - What storage and compute requirements should be expected on IBEX?
-
-### Verification note on additional mammalian-evolution citations
-The earlier "Armstrong et al. (2020)" entry is not retained because the exact paper and title were not verified. Any additional claims about mammalian gene evolution or conservation should be cited only after checking the primary paper, DOI, and journal entry.
 
 ## Priority 3: Gene-loss and orthology tools
 
@@ -80,7 +77,7 @@ Questions to answer:
 ### Emms and Kelly (2019)
 **OrthoFinder: phylogenetic orthology inference for comparative genomics**
 
-Journal: Genome Biology
+Journal: Springer nature
 
 Why it matters: Provides an alternative if suitable precomputed ortholog assignments are unavailable.
 
@@ -93,10 +90,9 @@ Questions to answer:
 
 The following topics are relevant for the literature review and discussion, but they should only be included with full formal citations when the exact paper is checked:
 
-- Cañestro et al. (2013): gene duplication, paralogs, orthologs, synteny, and the evolutionary fates of duplicate genes.
-- Wang et al. (2020): transcriptome/translatome differences and evolutionary buffering.
-- Mazin et al. (2021): alternative splicing, exon-level constraint, and organ development.
-- Any author-year-only mention of a paper without a title, journal, issue, or DOI should be treated as unverified and removed from a formal bibliography.
+- Cañestro et al. (2013): Impact of gene gains, losses and duplication modes on the origin and diversification of vertebrates
+- Wang et al. (2020): Transcriptome and translatome co-evolution in mammals
+- Mazin et al. (2021): Alternative splicing during mammalian organ development
 
 These readings support a network-level interpretation of co-elimination and caution against assuming that similar phenotypes always use identical genetic mechanisms.
 
@@ -121,7 +117,7 @@ The summer study guide is a useful synthesis but is not itself a primary source.
 ## Priority 4: Evolutionary conservation and statistics
 
 ### Pollard et al. (2010)
-**Detection of nonneutral substitution rates on mammalian phylogenies**
+Detection of nonneutral substitution rates on mammalian phylogenies
 
 Journal: Genome Research
 
@@ -129,15 +125,10 @@ Why it matters: Foundational paper for phyloP and the detection of conserved or 
 
 Project use: phyloP should be used as supporting evidence for evolutionary constraint or acceleration, not as the primary definition of gene loss.
 
-### Hubisz et al. (2011)
-**Mapping gene regulatory elements by phylogenetic footprinting**
-
-Journal: Molecular Biology and Evolution
-
-Why it matters: Provides background on the PHAST framework and phylogenetic footprinting methods related to phyloP.
 
 ### Pagel (1994)
-**Detecting correlated evolution on phylogenies**
+Detecting correlated evolution on phylogenies: a general method for the comparative analysis of discrete characters 
+
 
 Journal: Proceedings of the Royal Society B
 
@@ -178,16 +169,3 @@ For every paper, record:
 - Available processed data
 - What can be reproduced on IBEX
 - What could become a contribution of this project
-
-## Recommended reading order
-
-1. Szenker-Ravi et al. (2022)
-2. Zoonomia Consortium (2023)
-3. Kirilenko et al. (2023), TOGA
-4. Pollard et al. (2010), phyloP
-5. Anthropic (2026), ART genome-mining case study and technical report
-6. Szenker-Ravi et al. (2025) — verify exact title and journal entry before formal citation
-7. CESAR 2.0 paper — verify exact publication details before formal reference
-8. Emms and Kelly (2019), OrthoFinder
-9. Pagel (1994)
-10. Hubisz et al. (2011)
