@@ -1,0 +1,27 @@
+species	DAND5	CIROP	CIROZ	PKD1L1	MMP21	clade	genes_lost
+Balaenoptera_acutorostrata	L	L	L	L	L	Cetacea	5
+Elaphurus_davidianus	L	L	L	L	L	Ruminantia/other Artiodactyla	5
+Giraffa_tippelskirchi	L	L	L	L	L	Ruminantia/other Artiodactyla	5
+Hemitragus_hylocrius	L	L	L	L	L	Ruminantia/other Artiodactyla	5
+Eschrichtius_robustus	L	L	L	L	L	Cetacea	5
+Rangifer_tarandus	L	L	L	L	L	Ruminantia/other Artiodactyla	5
+Neophocaena_asiaeorientalis	L	L	L	L	L	Cetacea	5
+Odocoileus_virginianus	L	L	L	L	L	Ruminantia/other Artiodactyla	5
+Mesoplodon_bidens	L	L	L	L	L	Cetacea	5
+Kogia_breviceps	L	L	L	L	L	Cetacea	5
+Phocoena_phocoena	L	L	L	L	L	Cetacea	5
+Thryonomys_swinderianus	L	L	L	L	L	Rodentia	5
+Ovis_canadensis	L	L	L	L	L	Ruminantia/other Artiodactyla	5
+Eubalaena_japonica	L	L	L	PM	L	Cetacea	4
+Ammotragus_lervia	L	L	L	L	UL	Ruminantia/other Artiodactyla	4
+Beatragus_hunteri	L	L	L	L	PM	Ruminantia/other Artiodactyla	4
+Bison_bison	L	L	L	L	UL	Ruminantia/other Artiodactyla	4
+Ctenomys_sociabilis	UL	L	L	L	L	Rodentia	4
+Octodon_degus	I	L	L	L	L	Rodentia	4
+Myocastor_coypus	PG	L	L	L	L	Rodentia	4
+Inia_geoffrensis	L	L	L	L	PM	Cetacea	4
+Lipotes_vexillifer	L	L	L	L	UL	Cetacea	4
+Petromus_typicus	UL	L	L	L	L	Rodentia	4
+Pantholops_hodgsonii	L	L	L	L	UL	Ruminantia/other Artiodactyla	4
+Platanista_gangetica	L	L	L	UL	L	Cetacea	4
+Vicugna_pacos	UL	L	L	L	L	Ruminantia/other Artiodactyla	4
