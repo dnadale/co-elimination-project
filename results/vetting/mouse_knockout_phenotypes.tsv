@@ -1,0 +1,21 @@
+human_gene	ensembl_id	description	mouse_ortholog	mgi_id	n_impc_phenotypes	impc_phenotypes	n_mgi_phenotypes	mgi_phenotypes
+KRABD2	ENSG00000184619	KRAB domain containing 2	NONE		0		0	
+TIGD7	ENSG00000140993	tigger transposable element derived 7	NONE		0		0	
+IGSF22	ENSG00000179057	immunoglobulin superfamily member 22	NONE		0		0	
+MAGEF1	ENSG00000177383	MAGE family member F1	NONE		0		0	
+ZNF404	ENSG00000176222	zinc finger protein 404	NONE		0		0	
+ZNF514	ENSG00000144026	zinc finger protein 514	NONE		0		0	
+ENSG00000203812	ENSG00000203812		NONE		0		0	
+MCTS2	ENSG00000101898	MCTS family member 2	Mcts2	MGI:1913655	0		0	
+FAM200A	ENSG00000221909	family with sequence similarity 200 member A	NONE		0		0	
+TYMP	ENSG00000025708	thymidine phosphorylase	Tymp	MGI:1920212	0		2	abnormal nucleotide metabolism; decreased liver enzyme/coenzyme activity
+CALML6	ENSG00000169885	calmodulin like 6	NONE		0		0	
+CETP	ENSG00000087237	cholesteryl ester transfer protein	NONE		0		0	
+LRRC70	ENSG00000186105	leucine rich repeat containing 70	NONE		0		0	
+SPEGNB	ENSG00000286095	SPEG neighbor	NONE		0		0	
+ENSG00000272196	ENSG00000272196		NONE		0		0	
+CIROZ	ENSG00000175262	ciliated left-right organizer protein containing ZP-N domains	Ciroz	MGI:2685418	3	decreased circulating glucose level (heterozygote); impaired pupillary reflex (heterozygote); preweaning lethality, incomplete penetrance (homozygote)	17	abdominal situs ambiguus; abnormal liver morphology; atrioventricular septal defect; bronchial situs inversus; decreased circulating glucose level; dextrocardia; double outlet right ventricle; embryonic lethality, incomplete penetrance; heterotaxia; immotile respiratory cilia; impaired pupillary reflex; preweaning lethality, incomplete penetrance; right pulmonary isomerism; situs ambiguus; situs inversus totalis
+FPR1	ENSG00000171051	formyl peptide receptor 1	Fpr1	MGI:107443	0		4	abnormal innate immunity; impaired neutrophil chemotaxis; increased susceptibility to bacterial infection; increased susceptibility to bacterial infection induced morbidity/mortality
+FAM200B	ENSG00000237765	family with sequence similarity 200 member B	NONE		0		0	
+ZNF677	ENSG00000197928	zinc finger protein 677	NONE		0		0	
+ACY3	ENSG00000132744	aminoacylase 3	Acy3	MGI:1918920	5	abnormal cholesterol homeostasis (homozygote); decreased circulating calcium level (homozygote); decreased circulating total protein level (homozygote); decreased mean corpuscular hemoglobin concentration (homozygote); increased circulating creatinine level (homozygote)	5	abnormal cholesterol homeostasis; decreased circulating calcium level; decreased circulating total protein level; decreased mean corpuscular hemoglobin concentration; increased circulating creatinine level
