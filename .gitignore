@@ -13,6 +13,18 @@
 *.tsv.gz
 *.tar.gz
 
+# Large/raw data — keep provenance manifests, not the data itself
+data/
+raw_data/
+genomes/
+alignments/
+orthologs/
+logs/
+
+# Large intermediates — keep final results
+analysis/*.tsv
+analysis/*.csv
+
 # Local environments and caches
 .venv/
 venv/
