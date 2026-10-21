@@ -1,0 +1,2 @@
+gene_a	gene_b	shared_loss_count	gene_a_loss_count_comparable	gene_b_loss_count_comparable	expected_shared_loss_count_naive	excess_shared_losses_naive	jaccard_comparable	enrichment_naive	comparable_species_count	gene_a_symbol	gene_a_biotype	gene_b_symbol	gene_b_biotype	a_hist	b_hist
+ENSG00000176222	ENSG00000184619	51	53	68	25.380282	25.619718	0.728571	2.009434	142	ZNF404	protein_coding	KRABD2	protein_coding	False	False

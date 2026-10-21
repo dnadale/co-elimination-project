@@ -1,0 +1,22 @@
+{
+  "raw_status_files": 162,
+  "raw_status_sha256_mismatches": [],
+  "rebuilt_matrix_identical": true,
+  "matrix_shape": [
+    19464,
+    162
+  ],
+  "matrix_sha256": "eeb409d7e32f1d01c242735158f487ef2a9a8c2f3438b645482efe9f0a0c112e",
+  "tree_sha256_matches_manifest": true,
+  "roster_sha256_matches_manifest": true,
+  "toga_catalog_sha256_matches_manifest": true,
+  "status_counts": {
+    "I": 2356259,
+    "PI": 348556,
+    "UL": 143114,
+    "L": 142729,
+    "M": 92798,
+    "PG": 35910,
+    "PM": 33802
+  }
+}

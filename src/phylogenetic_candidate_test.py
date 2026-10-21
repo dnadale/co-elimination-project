@@ -170,15 +170,32 @@ def make_likelihood(tree: Tree, taxa: list[str], statuses_a: list[str], statuses
     return likelihood, len(retained)
 
 
-def fit_model(likelihood, dependent: bool, starts: int, maxiter: int) -> tuple[float, bool]:
+# Dependent-model parameter order -> independent-model parameter it collapses to.
+DEPENDENT_FROM_INDEPENDENT = ("a_gain", "b_gain", "a_gain", "b_loss", "a_loss", "b_gain", "a_loss", "b_loss")
+INDEPENDENT_ORDER = tuple(dict.fromkeys(name for row in INDEPENDENT_TRANSITIONS.values() for _, name in row))
+
+
+def independent_to_dependent(parameters: np.ndarray) -> np.ndarray:
+    by_name = dict(zip(INDEPENDENT_ORDER, parameters))
+    return np.array([by_name[name] for name in DEPENDENT_FROM_INDEPENDENT])
+
+
+def fit_model(
+    likelihood, dependent: bool, starts: int, maxiter: int, extra_initials: list[np.ndarray] | None = None
+) -> tuple[float, bool, np.ndarray]:
     parameter_count = 8 if dependent else 4
     bounds = [(-7.0, 5.0)] * parameter_count
+    rng = np.random.default_rng(20261021 + parameter_count)
     initial_sets = [np.full(parameter_count, math.log(0.5))]
     if starts > 1:
         initial_sets.append(np.linspace(math.log(0.2), math.log(1.2), parameter_count))
+    while len(initial_sets) < starts:
+        initial_sets.append(rng.uniform(math.log(0.05), math.log(3.0), parameter_count))
+    initial_sets = initial_sets[:starts] + list(extra_initials or [])
     best = -math.inf
+    best_x = initial_sets[0]
     all_success = True
-    for initial in initial_sets[:starts]:
+    for initial in initial_sets:
         result = minimize(
             lambda parameters: -likelihood(parameters, dependent),
             initial,
@@ -186,9 +203,10 @@ def fit_model(likelihood, dependent: bool, starts: int, maxiter: int) -> tuple[f
             bounds=bounds,
             options={"maxiter": maxiter, "ftol": 1e-8},
         )
-        best = max(best, -float(result.fun))
+        if -float(result.fun) > best:
+            best, best_x = -float(result.fun), result.x
         all_success = all_success and bool(result.success)
-    return best, all_success
+    return best, all_success, best_x
 
 
 def benjamini_hochberg(p_values: list[float]) -> list[float]:
@@ -233,8 +251,11 @@ def main() -> None:
             output_rows.append(result)
             continue
         likelihood, taxa_count = make_likelihood(tree, taxa, gene_rows[gene_a], gene_rows[gene_b])
-        independent_ll, independent_ok = fit_model(likelihood, False, args.starts, args.maxiter)
-        dependent_ll, dependent_ok = fit_model(likelihood, True, args.starts, args.maxiter)
+        independent_ll, independent_ok, independent_x = fit_model(likelihood, False, args.starts, args.maxiter)
+        # Nested models: starting at the independent MLE guarantees dependent_ll >= independent_ll.
+        dependent_ll, dependent_ok, _ = fit_model(
+            likelihood, True, args.starts, args.maxiter, [independent_to_dependent(independent_x)]
+        )
         lrt = max(0.0, 2.0 * (dependent_ll - independent_ll))
         result.update(
             {

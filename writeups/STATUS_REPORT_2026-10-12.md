@@ -42,3 +42,9 @@ dominated by uncertain calls (71 UL, 22 intact), so those four were not recovere
 ## Figures
 `results/figures/`: 2 (top-100 candidates), 4 (LR Fisher), 5 (CIROZ), 1 (QC), 3 (unlinked pairs);
 `results/lr_module/02_tree_with_module_status.png` (tree). Code: `src/plot_report_figures.py`, `src/plot_lr_module.py`.
+
+## Correction (2026-10-21)
+The "Key finding" above overstates what the screen did. The five LR module pairs rank 1,241 to 162,185 of 7,389,576
+in the raw screen; CIROZ reaches the top 100 only through MCTS2. The Fisher tests on the known genes are valid and show
+the data contain the LR signal, but the screen itself did not recover the module. Details and the corrected phylogenetic
+validation are in `notes/session_2026-10-21.md` and `results/triage/candidate_triage.tsv`.

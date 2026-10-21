@@ -1,0 +1,7 @@
+{
+  "method": "Pagel dependent vs independent CTMC; 4 starts plus warm start of the dependent model from the independent MLE; maxiter 200",
+  "candidates_tested": 19,
+  "chunks_merged": 19,
+  "selection_caveat": "Candidates were selected from the same matrix; p-values are post-selection and exploratory.",
+  "multiple_testing_caveat": "BH q-values correct only within this shortlist."
+}

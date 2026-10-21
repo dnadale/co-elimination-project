@@ -1,0 +1,12 @@
+{
+  "created_at_utc": "2026-10-21T11:09:34.994575+00:00",
+  "method": "Pagel-style binary dependent-vs-independent continuous-time Markov models on pruned Zoonomia tree",
+  "candidates_tested": 1,
+  "candidate_source": "/tmp/pagel_chunks/pair16.tsv",
+  "selection_caveat": "Candidates were selected using the same matrix; nominal p-values are post-selection and not confirmatory.",
+  "multiple_testing_caveat": "BH q-values correct only within this selected candidate shortlist; they do not correct genome-wide screening or post-selection.",
+  "missing_status_treatment": "Non-I/L TOGA states are coded as ambiguous tip likelihoods, not as intact.",
+  "outputs": [
+    "/tmp/pagel_chunks/out16/pagel_dependent_vs_independent.tsv"
+  ]
+}

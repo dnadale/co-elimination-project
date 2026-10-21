@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-cd /home/millert/co_elimination_project
+cd "$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 PYTHON="${PYTHON:-python3}"
 
@@ -45,6 +45,26 @@ echo "Step 3: lightweight phylogenetic validation for a notebook-safe shortlist.
   --maxiter 50 \
   --output-dir results/phylogenetic_validation
 
+echo "Step 4: audit checks (hashes, matrix rebuild, assembly-quality bias, LR rank in screen)..."
+"$PYTHON" src/audit_checks.py
+
+# The symbolic, no-histone and unlinked candidate subsets are still produced inside
+# notebooks/Project1.ipynb; run those cells before the steps below.
+if [[ ! -f results/agentic_triage/ranked_co_loss_candidates_unlinked.tsv ]]; then
+  echo "Missing results/agentic_triage/ranked_co_loss_candidates_unlinked.tsv (generate it in the notebook)."
+  exit 1
+fi
+
+echo "Step 5: phylogeny-aware null (count-conditioned, burden-scaled; slow, ~100k simulations per gene)..."
+"$PYTHON" src/phylo_null_coloss.py 100000
+
+echo "Step 6: Pagel tests on the 19 unlinked pairs (one job per pair, then merged)..."
+JOBS="${JOBS:-8}" bash src/run_pagel_unlinked_parallel.sh
+
+echo "Step 7: matched-pair empirical null and combined candidate triage..."
+"$PYTHON" src/matched_pair_null.py
+"$PYTHON" src/make_candidate_triage.py
+
 echo "Optional full validation: uncomment the next block if you want to score all 100 candidates."
 # "$PYTHON" src/phylogenetic_candidate_test.py \
 #   --tree raw_data/zoonomia/241-mammalian-2020v2.phast-242.nh \
@@ -60,3 +80,8 @@ echo "Main outputs:"
 echo "  analysis/gene_status_matrix.tsv"
 echo "  results/agentic_triage/ranked_co_loss_candidates.tsv"
 echo "  results/phylogenetic_validation/pagel_dependent_vs_independent.tsv"
+echo "  results/phylogenetic_validation_unlinked/pagel_dependent_vs_independent.tsv"
+echo "  results/phylo_null/phylo_null_pairs.tsv"
+echo "  results/matched_pair_null/matched_pair_null.tsv"
+echo "  results/triage/candidate_triage.tsv"
+echo "  results/audit/"

@@ -1,10 +1,15 @@
 """Phylogeny-aware null for co-loss: simulate each gene independently on the real tree.
 
 For each gene, fit a 2-state (intact/lost) continuous-time Markov model on the pruned Zoonomia tree
-by maximum likelihood, then simulate N independent histories per gene. A pair's p-value is the share of
-simulations in which two independent genes share at least as many losses as observed. This keeps
-the tree structure (related species share state) that the plain Fisher test ignores.
+by maximum likelihood, then simulate N independent histories per gene. The ML rate alone does not
+reproduce a gene's observed loss frequency, so simulations are kept only if the gene's simulated
+loss count among the pair's comparable species is within 10% (min 2) of its observed count.
+A pair's p-value is the share of retained simulation pairs in which two independent genes share at
+least as many losses as observed. This keeps the tree structure (related species share state) that
+the plain Fisher test ignores. Only I and L calls are used; all other statuses are ambiguous.
+Branch lengths are also scaled by each lineage's mean relative loss burden (set BURDEN_AWARE=0 to disable).
 """
+import os
 import sys
 from pathlib import Path
 
@@ -17,7 +22,8 @@ from scipy.linalg import expm
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "results" / "phylo_null"
 OUT.mkdir(parents=True, exist_ok=True)
-N_SIM = int(sys.argv[1]) if len(sys.argv) > 1 else 10000
+N_SIM = int(sys.argv[1]) if len(sys.argv) > 1 else 100000
+MIN_ACCEPTED = 200
 rng = np.random.default_rng(20261014)
 
 mat = pd.read_csv(ROOT / "analysis/gene_status_matrix.tsv", sep="\t", index_col="gene_id")
@@ -44,6 +50,22 @@ children = [[idx[id(c)] for c in n.clades] for n in nodes]
 postorder = list(range(len(nodes)))[::-1]  # preorder reversed
 scale = np.median(blen[blen > 0])
 blen = blen / scale
+
+# Lineage rate heterogeneity: genes share a per-branch rate factor equal to the mean relative loss
+# burden of the descendant species, so high-burden clades (e.g. cetaceans) lose many genes together
+# even when the genes are independent.
+burden = (mat == "L").sum(axis=0).values.astype(float)
+tip_factor = burden / np.median(burden)
+tip_sum = np.zeros(len(nodes))
+tip_cnt = np.zeros(len(nodes))
+for s_i, n in enumerate(tip_idx):
+    tip_sum[n], tip_cnt[n] = tip_factor[s_i], 1
+for n in postorder:
+    if children[n]:
+        tip_sum[n] = sum(tip_sum[c] for c in children[n])
+        tip_cnt[n] = sum(tip_cnt[c] for c in children[n])
+if os.environ.get("BURDEN_AWARE", "1") == "1":
+    blen = blen * (tip_sum / tip_cnt)
 print(f"tree: {len(species)} tips, {len(nodes)} nodes", flush=True)
 
 
@@ -92,7 +114,7 @@ def fit_and_simulate(obs):
 
 def encode(row):
     out = np.full(len(species), -1)
-    out[row.isin(["I", "PI"]).values] = 0
+    out[(row == "I").values] = 0
     out[(row == "L").values] = 1
     return out
 
@@ -111,7 +133,7 @@ def gid(symbol_or_id):
     return base2full[b]
 
 
-pairs = pd.read_csv(ROOT / "results/agentic_triage/ranked_co_loss_candidates_unlinked.tsv", sep="\t")
+pairs = pd.read_csv(ROOT / "results/agentic_triage/ranked_co_loss_candidates_unlinked.tsv", sep="\t", keep_default_na=False)
 tests = [("candidate", r.gene_a, r.gene_b, r.gene_a_symbol, r.gene_b_symbol) for r in pairs.itertuples()]
 lr = ["DAND5", "CIROP", "CIROZ", "PKD1L1", "MMP21"]
 for i in range(len(lr)):
@@ -135,24 +157,37 @@ for kind, ga, gb, sa, sb in tests:
     ob, simb, a_b, b_b = get(gb)
     comp = (oa >= 0) & (ob >= 0)
     obs_shared = int(((oa == 1) & (ob == 1) & comp).sum())
-    null = (sima & simb & comp[:, None]).sum(axis=0)
+
+    def accepted(obs, sim):
+        target = int(((obs == 1) & comp).sum())
+        counts = (sim & comp[:, None]).sum(axis=0)
+        return np.where(np.abs(counts - target) <= max(2, 0.1 * target))[0]
+
+    ia, ib = accepted(oa, sima), accepted(ob, simb)
+    k = min(len(ia), len(ib))
     # naive (tree-blind) expectation from observed frequencies, for comparison
     naive = (oa[comp] == 1).mean() * (ob[comp] == 1).mean() * comp.sum()
+    if k < MIN_ACCEPTED:
+        null_mean, null_p95, null_max, p_tree = float("nan"), -1, -1, float("nan")
+    else:
+        rng.shuffle(ia)
+        rng.shuffle(ib)
+        null = (sima[:, ia[:k]] & simb[:, ib[:k]] & comp[:, None]).sum(axis=0)
+        null_mean, null_p95, null_max = float(null.mean()), int(np.percentile(null, 95)), int(null.max())
+        p_tree = (1 + int((null >= obs_shared).sum())) / (k + 1)
     rows.append(dict(
         kind=kind, gene_a=sa, gene_b=sb, comparable_species=int(comp.sum()), observed_shared_L=obs_shared,
-        naive_expected=round(float(naive), 1), tree_null_mean=round(float(null.mean()), 1),
-        tree_null_p95=int(np.percentile(null, 95)), tree_null_max=int(null.max()),
-        p_tree=(1 + int((null >= obs_shared).sum())) / (N_SIM + 1),
+        naive_expected=round(float(naive), 1), tree_null_mean=round(null_mean, 1),
+        tree_null_p95=null_p95, tree_null_max=null_max, n_accepted_sims=k, p_tree=p_tree,
     ))
     print(rows[-1], flush=True)
 
 df = pd.DataFrame(rows)
-m = len(df)
-order = df["p_tree"].rank(method="first").astype(int)
-bh = (df["p_tree"] * m / order)
-srt = df.assign(_bh=bh).sort_values("p_tree", ascending=False)
-q = srt["_bh"].cummin().clip(upper=1)
-df["q_tree_BH"] = q.reindex(df.index)
+tested = df["p_tree"].notna()
+m = int(tested.sum())
+srt = df[tested].sort_values("p_tree", ascending=False)
+bh = srt["p_tree"] * m / (m - np.arange(len(srt)))
+df["q_tree_BH"] = bh.cummin().clip(upper=1).reindex(df.index)
 df["survives_q05"] = df["q_tree_BH"] < 0.05
 df.to_csv(OUT / "phylo_null_pairs.tsv", sep="\t", index=False)
 print(df[["kind", "gene_a", "gene_b", "observed_shared_L", "naive_expected", "tree_null_mean", "p_tree", "q_tree_BH"]].to_string())

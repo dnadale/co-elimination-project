@@ -1,0 +1,44 @@
+recorded_utc: 2026-10-21T14:38:12+00:00
+python: 3.9.18
+platform: Linux-5.14.0-427.20.1.el9_4.0.1.x86_64-x86_64-with-glibc2.34
+git_commit: c4d9764d8659ad67a0bd55345e4a50c5ab9afa39
+git_uncommitted_files: 27
+
+packages (see requirements.lock.txt):
+  numpy==2.0.2
+  pandas==2.3.3
+  scipy==1.13.1
+  scikit-learn==1.6.1
+  matplotlib==3.9.4
+  seaborn==0.13.2
+  biopython==1.85
+  ete3==3.1.3
+  networkx==3.2.1
+  pyyaml==5.4.1
+  requests==2.32.5
+  tqdm==4.70.1
+  pyfaidx==0.9.0.4
+
+sha256 of key inputs and outputs:
+  da8b5691811feaf00eea13df3eef2be3cc38ce438969ef5911086dff342cbe7d  raw_data/zoonomia/241-mammalian-2020v2.phast-242.nh
+  5a6c93d4dc812765d891e5ed4ff244c8fcc2a83716c36722cb9c8bd38c0ae23c  raw_data/zoonomia/zoonomia_mammal_assemblies.tsv
+  66f42c5138068efad87f28dda7ddde7ed2880c17269c693eb8205691951d12c8  raw_data/toga_inventory/overview.table.tsv
+  d819544aa222225ebe11deff15c5e5d82321fddd4da4af1d9c4b90ec8c1a95dc  raw_data/toga_gene_status/download_manifest.tsv
+  eeb409d7e32f1d01c242735158f487ef2a9a8c2f3438b645482efe9f0a0c112e  analysis/gene_status_matrix.tsv
+  2fb1b39bdea96c75927ca1878d773f402def6e4129a435fc00bc226e670cc90e  results/agentic_triage/ranked_co_loss_candidates.tsv
+  dfeca0569de3bc575b178c8ff189885d46bd414df6445a956a51aca2828ebe50  results/agentic_triage/ranked_co_loss_candidates_unlinked.tsv
+  9dcea9a58ba0b37d8b2e0caf282b5bdfe7ae39cf9afa24df48e64f7e0fb12fac  results/phylo_null/phylo_null_pairs.tsv
+  f7be80d2d63742fef7d56894ac1a3764b3a707377ebb9f7cb1541598a08b69d3  results/phylogenetic_validation_unlinked/pagel_dependent_vs_independent.tsv
+  c67262a76e3caa682f49c7fc1e717c607ac5884da800e60c40aca192c2946da4  results/matched_pair_null/matched_pair_null.tsv
+  701128de604125c33f081c82050617eecbec51b3a6d5268a299523361501b2bb  results/triage/candidate_triage.tsv
+
+random seeds:
+  src/phylo_null_coloss.py: numpy default_rng(20261014)
+  src/phylogenetic_candidate_test.py: random starts default_rng(20261021 + parameter_count)
+
+run settings:
+  src/phylo_null_coloss.py 100000 (BURDEN_AWARE=1 by default)
+  src/phylogenetic_candidate_test.py --starts 4 --maxiter 200 (unlinked pairs, one job per pair)
+
+data source: TOGA human-reference loss_summ_data for 162 Zoonomia assemblies (exact accession match);
+  genome, alignment and ortholog files were never downloaded or needed.

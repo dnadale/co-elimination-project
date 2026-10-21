@@ -1,0 +1,2 @@
+gene_a	gene_b	shared_loss_count	gene_a_loss_count_comparable	gene_b_loss_count_comparable	expected_shared_loss_count_naive	excess_shared_losses_naive	jaccard_comparable	enrichment_naive	comparable_species_count	gene_a_symbol	gene_a_biotype	gene_b_symbol	gene_b_biotype	a_hist	b_hist
+ENSG00000203812	ENSG00000272196	36	38	41	9.7375	26.2625	0.837209	3.697047	160					False	False

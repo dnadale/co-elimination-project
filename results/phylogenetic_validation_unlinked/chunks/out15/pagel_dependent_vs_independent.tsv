@@ -1,0 +1,2 @@
+rank_raw	gene_a	gene_b	raw_shared_loss_count	raw_comparable_species_count	tree_taxa_tested	log_likelihood_independent	log_likelihood_dependent	lrt_statistic	lrt_df_nominal	nominal_p_post_selection	independent_optimizer_success	dependent_optimizer_success	test_status	q_bh_within_selected_shortlist
+1	ENSG00000169885	ENSG00000179057	50	105	162	-75.966791	-55.856471	40.220639	4	3.896673408499854e-08	True	True	exploratory_post_selection_nominal_lrt	3.896673408499854e-08
