@@ -5,11 +5,9 @@ Comparative genomics project for coordinated gene co-elimination / phenotype-agn
 ## Directory layout
 - data/            : project data
 - raw_data/        : raw input files
-- genomes/         : genome FASTA files
-- alignments/      : multiple sequence alignments
 - orthologs/       : ortholog mapping outputs
 - analysis/        : intermediate analysis outputs
-- results/         : final tables, figures, summaries
-- logs/            : log files
+- results/         : preliminary tables, figures, summaries
 - notebooks/       : notebooks for exploration
 - src/             : analysis scripts
+- writups/         : concepts to build on for writing
